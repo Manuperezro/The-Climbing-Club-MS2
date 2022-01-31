@@ -156,18 +156,13 @@ li {
     }
 }
 
-#cover-text h2 {
-
-    color: rgb(255, 255, 255);
-    font-size: 150%;
-}
-
 
 #cover-text {
+    color: rgb(255, 255, 255);
     font-size: 110%;
     letter-spacing: 4px;
-    width: 500px;
-    height: 250px;
+    width: 550px;
+    height: 300px;
     padding-top: 40px;
     padding-left: 10px;
     background-color: rgba(71, 69, 67, 0.404);
@@ -175,6 +170,16 @@ li {
     left: 80px;
     position: absolute;
     float: left;
+
+}
+
+#cover-text p { 
+    margin-left: 40px;
+}
+
+.button-hero{
+
+    margin-left: 40px;
 
 }
   
