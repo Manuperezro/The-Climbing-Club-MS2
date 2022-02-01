@@ -19,6 +19,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     font-family: 'Poppins', sans-serif;
+    z-index : 9999;
 }
 
 .logo{
@@ -27,12 +28,14 @@ nav {
     letter-spacing: 5px;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
+    z-index : 9999;
 }
 
 .nav-links{
     display: flex;
     justify-content: space-around;
     width: 50%;
+    z-index : 9999;
 
 }
 
@@ -46,10 +49,12 @@ li {
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 25px;
+    z-index : 9999;
 }
 
 .burger{
     display: none;
+    z-index : 9999;
 }
 
 .burger div {
@@ -57,6 +62,7 @@ li {
     height: 3px;
     background-color: seashell;
     margin:5px;
+    z-index : 9999;
 }
 
 @media screen and (max-width:1025px) { 
@@ -91,6 +97,7 @@ li {
     .burger{
         display: block;
         cursor: pointer;
+        z-index : 9999;
 
     }
 
@@ -115,14 +122,17 @@ li {
 
     .toggle .line1{ 
         transform: rotate(-45deg) translate(-5px, 6px);
+        z-index : 1001;
     }
 
     .toggle .line2{ 
         opacity: 0;
+        z-index : 1001;
     }
 
     .toggle .line3{ 
         transform: rotate(45deg) translate(-5px, 6px);
+        z-index : 1001;
         
     }
 /*---------------------------Land page and hero image*/
@@ -130,11 +140,13 @@ li {
 .box {
     width: 100%;
     height: 100%;
+    z-index : 1001;
   }
   
   img {
     width: 100%;
     height: 100%;
+  
   }
   
   #hero-outer{
@@ -143,6 +155,7 @@ li {
     width: 100%;
     overflow: hidden;
     position: relative;
+  
     
 }
 
@@ -183,3 +196,23 @@ li {
 
 }
   
+@media screen and (max-width:1025px) { 
+    .cover-text{
+        margin-right: 90px;
+    
+    }
+}
+
+@@media screen and (max-width:768px) { 
+    .cover-text{
+        margin-right: 200px;
+    
+    }
+}
+
+
+
+.slider-wrap{
+    position: relative;
+
+}
