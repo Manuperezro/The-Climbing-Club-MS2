@@ -1,29 +1,53 @@
 // Animation Navigation Var.
-// Code from Dev Ed Youtube Channel.
-const navSlide = () => { 
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-   
-    burger.addEventListener('click', () =>{  
-        //toggle Nav 
-        nav.classList.toggle('nav-active');
-        //Animate Links
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) { 
-                link.style.animation  =' '
-            }else { 
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s`;
-            }
-        });
-        //Burger Animation
-        burger.classList.toggle('toggle');
-    });
-}
-navSlide();
+// Code from CodingLab  Youtube Channel.
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+
 
 
 //Swiper
+
 //Initialize Swipper
 
   var swiper = new Swiper(".mySwiper", {

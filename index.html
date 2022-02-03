@@ -27,6 +27,9 @@
     <!-- Swiper's Css-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- custom css file-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <title>The Climbing Club</title>
@@ -36,32 +39,49 @@
     <header>
         <!-----navigation---bar-->
         <nav>
-         <!----company---logo-->
-        <div class="logo">
-            <h1>The <br>  Climbing <br> Club</h1>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href ="#">Home</a>
-            </li>
-            <li>
-                <a href ="#">Courses</a>
-            </li>
-            <li>
-                <a href ="#">Retreats</a>
-            </li>
-            <li>
-                <a href ="#">About Us</a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+          <div class="nav-bar">
+              <i class='bx bx-menu sidebarOpen' ></i>
+              <span class="logo navLogo"><a href="#">The Climbin Club</a></span>
+  
+              <div class="menu">
+                  <div class="logo-toggle">
+                      <span class="logo"><a href="#">The Climbing Club</a></span>
+                      <i class='bx bx-x siderbarClose'></i>
+                  </div>
+  
+                  <ul class="nav-links">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Retreats</a></li>
+                      <li><a href="#">Courses</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+  
+              <div class="darkLight-searchBox">
+                  <div class="dark-light">
+                      <i class='bx bx-moon moon'></i>
+                      <i class='bx bx-sun sun'></i>
+                  </div>
+  
+                  <div class="searchBox">
+                     <div class="searchToggle">
+                      <i class='bx bx-x cancel'></i>
+                      <i class='bx bx-search search'></i>
+                     </div>
+  
+                      <div class="search-field">
+                          <input type="text" placeholder="Search...">
+                          <i class='bx bx-search'></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </nav>
     </header>
+
     <!--hero section-->
+
 <section id="hero-outer">
 
    <div class="box">
@@ -89,6 +109,7 @@
 <hr>
 
      <!--Products Section Slider-->
+
    <section class="slider-menu1">
     <div class="retreatsCourses">
       <h1>Our Retreats...</h1>
