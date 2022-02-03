@@ -2,17 +2,13 @@
 
 /*---------------------------main body*/
 
-*{ margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
-}
-
 body  {
     background-color: rgb(15, 15, 15);
+    height: 100vh;
+    background-color: var(--body-color);
 
 }
-/*---------------------------navigation bar*/
+
 
 *{
   margin: 0;
@@ -24,6 +20,7 @@ body  {
 
 
 /* ===== Colours ===== */
+
 :root{
   --body-color: #E4E9F7;
   --nav-color: #d37e17;
@@ -32,12 +29,7 @@ body  {
   --search-bar: #F2F2F2;
   --search-text: #010718;
 }
-
-
-body{
-  height: 100vh;
-  background-color: var(--body-color);
-}
+/*---------------------------navigation bar*/
 
 body.dark{
   --body-color: #18191A;
