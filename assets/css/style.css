@@ -253,10 +253,12 @@ body.dark .search-field i{
   color: var(--text-color);
 }
 
+
 @media (max-width: 790px) {
-  nav .nav-bar .sidebarOpen{
+  nav .nav-bar .sidebarOpen {
       display: block;
   }
+
 
   .menu{
       position: fixed;
@@ -331,7 +333,7 @@ body.dark .search-field i{
     z-index: 100;
     bottom: 80%;
     font-size: 50px;
-    color: cornsilk;
+    color: rgb(255, 255, 255);
 }
 
 #cover-text p { 
@@ -342,7 +344,7 @@ body.dark .search-field i{
     margin-left: 80px;
     outline: none;
     border: none;
-    color: rgb(240, 240, 240);
+    color: rgb(255, 255, 255);
     padding: 8px 22px;
     border-radius: 20px;
     font-size: 14px;
@@ -356,4 +358,6 @@ body.dark .search-field i{
 }
   
 /*---------------------------Slide Menu Products*/
+
+/*---------------------------Customers Reviews*/
 
