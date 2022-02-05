@@ -427,7 +427,6 @@ body.dark .search-field i{
 
 
 /*Newsletter Form*/
-/* ------------------------Signup Section home page---------------------------*/
  
 .innerLetter{
   margin: auto;
@@ -441,7 +440,7 @@ body.dark .search-field i{
   color: rgb(255, 255, 255);
   text-align: center; 
   width: 100%;
-  background: url(../images/newsletter.jpg) no-repeat center center scroll;
+  background-image: url(../images/newsletter.jpg) no-repeat center center scroll;
 
 }
 
@@ -504,7 +503,13 @@ body.dark .search-field i{
   }
 }
 
-/*Newsletter form*/
+/*footer*/
+
+.footer-icons{ 
+  text-align: center;
+  padding: 50px;
+  font-size: 70px;
+}
 
 @media screen and (max-width:960px) { 
   .col-newsletter { 
