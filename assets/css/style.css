@@ -363,10 +363,11 @@ body.dark .search-field i{
 
 .testimonials{
   padding: 20px;
-  color: #FFF;
+  color:rgb(255, 255, 255);
   text-align: center; 
-
+  
 }
+
 .inner{
   max-width: 1300px;
   margin: auto;
@@ -420,6 +421,47 @@ body.dark .search-field i{
   color:rgb(255, 255, 255)
 }
 
+
+/*Newsletter Form*/
+/* ------------------------Signup Section home page---------------------------*/
+ 
+.innerLetter{
+  margin: auto;
+  overflow: hidden;
+  padding:0 20px;
+  
+}
+
+.newsletter{ 
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center; 
+  width: 100%;
+  background: url(../images/newsletter.jpg) no-repeat center center scroll;
+
+}
+
+/* .newsletter-img{ 
+  background: url(../images/newsletter.jpg) no-repeat center center scroll;
+  background-size: cover;
+
+} */
+
+.col-newsletter{
+  width: 350px;
+  height:300px;
+  flex: 90%;
+  max-width: 90%;
+  box-sizing: border-box;
+  margin: 15px;
+  color: #d37e17;
+  opacity: 0.6;
+  border-radius: 0.7%;
+  padding-right: 30px;
+  padding-top: 50px;
+  margin-left: 70px;
+  background-color: rgb(167, 161, 161);
+}
 
 /*Media Queries*/
 
