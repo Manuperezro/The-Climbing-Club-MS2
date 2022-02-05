@@ -362,13 +362,13 @@ body.dark .search-field i{
 /*---------------------------Customers Reviews*/
 
 .testimonials{
-  padding: 40px;
+  padding: 20px;
   color: #FFF;
   text-align: center; 
 
 }
 .inner{
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   overflow: hidden;
   padding:0 20px;
@@ -389,12 +389,11 @@ body.dark .search-field i{
 }
 
 .col-testimonials{
-  flex: 33.33%;
-  max-width: 33.33%;
+  flex: 30.30%;
+  max-width: 30.30%;
   box-sizing: border-box;
-  padding:15px;
+  margin: 15px;
   color: #d37e17;
-  margin: 40px;
   background-color: rgb(167, 161, 161);
 
 }
@@ -415,6 +414,10 @@ body.dark .search-field i{
 .stars { 
   color: rgb(255, 153, 0);
   margin-bottom: 20px;
+}
+
+.stars p { 
+  color:rgb(255, 255, 255)
 }
 
 
