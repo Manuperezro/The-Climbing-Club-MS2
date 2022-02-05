@@ -350,6 +350,19 @@ body.dark .search-field i{
   
 /*---------------------------Slide Menu Products*/
 
+.card-body{ 
+  background-color: #393838;
+  color: #FFF;
+  text-align: center;
+}
+
+.button-card{
+  display: inline-block;
+}
+
+.owl-prev{
+  color:rgb(168, 163, 163)
+}
 /*---------------------------Customers Reviews*/
 
 .testimonials{
@@ -446,6 +459,31 @@ body.dark .search-field i{
   padding-top: 50px;
   margin-left: 70px;
   background-color: rgb(167, 161, 161);
+}
+
+.button2 {
+  outline: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+}
+
+.button2 button:hover{
+  background: #eb6d05;
+}
+
+.form-control{
+  opacity: 100;
+
+}
+
+.owl-prev{
+  color:#FFF
 }
 
 /*Media Queries*/
