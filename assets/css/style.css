@@ -432,7 +432,7 @@ body.dark .search-field i{
   margin: auto;
   overflow: hidden;
   padding:0 20px;
-  
+
 }
 
 .newsletter{ 
@@ -440,7 +440,10 @@ body.dark .search-field i{
   color: rgb(255, 255, 255);
   text-align: center; 
   width: 100%;
-  background-image: url(../images/newsletter.jpg) no-repeat center center scroll;
+  background: url(././images/newsletter.jpg) no-repeat center center scroll;
+  background-size: cover;
+  margin-top: 5%;
+  margin-bottom: 5%;
 
 }
 
@@ -452,12 +455,22 @@ body.dark .search-field i{
   box-sizing: border-box;
   margin: 15px;
   color: #d37e17;
-  opacity: 0.6;
   border-radius: 0.7%;
   padding-right: 30px;
   padding-top: 50px;
   margin-left: 70px;
-  background-color: rgb(167, 161, 161);
+  background-color: rgb(231, 231, 231);
+  opacity: 0.8;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.form-newsletter{
+  background-color: rgb(231, 231, 231);
+}
+
+.form-control{
+  opacity: 10.5;
+
 }
 
 .button2 {
@@ -483,23 +496,36 @@ body.dark .search-field i{
 
 /*Contact Section*/
 
-.innerLetter{
+.inner-contact{
   margin: auto;
   overflow: hidden;
   padding:0 20px;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
   
 }
 .contact-form{
   padding: 20px;
-  color: rgb(255, 255, 255);
   text-align: center; 
   width: 100%;
-  background-image: url(../images/newsletter.jpg) no-repeat center center scroll;
+  height:70%;
+}
 
+.contact{
+  padding: 20px;
+  text-align: center; 
+  width: 70%;
+  height: 60%;
+  opacity: 0.8;
+  box-shadow: 10px 10px 5px grey;
+  margin-bottom: 50px;
+  background-color: rgb(231, 231, 231);
+  margin-left: 80px;
 }
 
 .col-contact{
-  width: 100px;
+  width: 100%;
   height:100%;
   flex: 90%;
   max-width: 50%;
@@ -512,7 +538,49 @@ body.dark .search-field i{
   padding-top: 50px;
   margin-left: 24px;
   background-color: rgb(78, 73, 73);
+  background: url(././images/ropes-contact.jpg) no-repeat center center scroll;
+  background-size: cover;
 }
+
+#cover-text h2 {
+
+  color: khaki ;
+  font-size: 150%;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#cover-text h4 { 
+
+  color:rgb(0, 0, 0);
+
+}
+
+#cover-text {
+
+  font-size: 110%;
+  font-family: Oswald;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  
+
+  width: 300px;
+  height: 350px;
+
+  padding-top: 40px;
+  padding-left: 10px;
+
+  background-color: rgba(59, 58, 58, 0.404);
+
+  bottom: 30px;
+  left: 150px;
+
+  position: absolute;
+  float: left;
+
+}
+
 /*footer*/
 
 .footer-icons{ 

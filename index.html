@@ -53,12 +53,12 @@
                   </div>
   
                   <ul class="nav-links">
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Retreats</a></li>
-                      <li><a href="#">Courses</a></li>
-                      <li><a href="#">Reviews</a></li>
-                      <li><a href="#">Contact</a></li>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="#retreats">Retreats</a></li>
+                      <li><a href="#courses">Courses</a></li>
+                      <li><a href="#testimonials">Reviews</a></li>
+                      <li><a href="#newsletter">Newsletter</a></li>
+                      <li><a href="#contact">Contact</a></li>
                   </ul>
               </div>
   
@@ -119,7 +119,7 @@
      <!--Retreats-->
 <section>
   <div class="container-fluid my-5">
-    <h1 class="text-center fw bold display-1 mb-3"> <span class="text-muted">Climbing</span><span class="text-warning">Retreats</span></h1>
+    <h1 class="text-center fw bold display-1 mb-3" id="retreats"> <span class="text-muted">Climbing</span><span class="text-warning">Retreats</span></h1>
     <div class="row mt-5">
       <div class="owl-carousel owl-theme">
         <div class="item mb-4">
@@ -194,7 +194,7 @@
 
  <section>
   <div class="container-fluid my-5">
-    <h1 class="text-center fw bold display-1 mb-3"> <span class="text-muted">Climbing</span><span class="text-warning">Courses</span></h1>
+    <h1 class="text-center fw bold display-1 mb-3" id="courses"> <span class="text-muted">Climbing</span><span class="text-warning">Courses</span></h1>
     <div class="row mt-5">
       <div class="owl-carousel owl-theme">
         <div class="item mb-4">
@@ -266,7 +266,7 @@
         <!--Customers Reviews-->
 
   <section>
-    <div class="testimonials">
+    <div class="testimonials" id="testimonials">
       <div class="inner">
         <h1>Testimonials</h1>
         <div class="border"></div>
@@ -335,12 +335,12 @@
 
 <!--Signup Section-->
 <section>
-  <div class="newsletter">
+  <div class="newsletter" id="newsletter">
     <div class="innerLetter">
       <h1>Join Our News Letter !</h1>
-      <div class="row newsletter-img">
-        <div class="col newsletter-img col-newsletter">
-          <div class="newsletter">
+      <div class="row">
+        <div class="col col-newsletter">
+          <div class="form-newsletter">
             <form>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -361,39 +361,38 @@
 <hr>
 
 <section>
-  <div class="contact-form">
+  <div class="contact-form" id="contact">
     <div class="inner-contact">
       <h1>Contact Us</h1>
-      <div class="row newsletter-img">
-        <div class="col newsletter-img col-contact">
-          <div class="newsletter">
+      <div class="row">
+        <div class="col contact-img col-contact">
+          <div class="contact">
             <form>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Email address</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
+                <label for="exampleFormControlSelect1">Select the service you need information</label>
                 <select class="form-control" id="exampleFormControlSelect1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                  <option>Courses</option>
+                  <option>Retreats</option>
+                  <option>Something else</option>
+                  <option>Private Climbing tuition</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect2">Example multiple select</label>
+                <label for="exampleFormControlSelect2">How do you hear from us? </label>
                 <select multiple class="form-control" id="exampleFormControlSelect2">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                  <option>Advertisement</option>
+                  <option>Friends</option>
+                  <option>Reviews</option>
+                  <option>Radio</option>
+                  <option>Others</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <label for="exampleFormControlTextarea1">Write here your message and press the submit button</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
             </form>
@@ -402,8 +401,7 @@
         </div>
       </div>
     </div>
-  </div>
-  
+  </div>  
 </section>
 
 <!-- Footer-->
