@@ -18,6 +18,10 @@ body  {
   transition: all 0.4s ease;;
 }
 
+.sections-h1{
+  color:lightslategray;
+  text-align: center;
+}
 
 /* ===== Colours ===== */
 
@@ -497,89 +501,54 @@ body.dark .search-field i{
 /*Contact Section*/
 
 .inner-contact{
-  margin: auto;
-  overflow: hidden;
-  padding:0 20px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center; 
   width: 100%;
-  height: 100%;
-  color: #FFF;
+  /* background: url(././images/contact02.jpg) no-repeat center center scroll; */
+  background-size: cover;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  
   
 }
-.contact-form{
-  padding: 20px;
-  text-align: center; 
-  width: 100%;
-  height:70%;
-}
 
-.contact{
-  padding: 20px;
-  text-align: center; 
-  width: 70%;
-  height: 60%;
-  opacity: 0.8;
-  box-shadow: 10px 10px 5px grey;
-  margin-bottom: 50px;
-  background-color: rgb(231, 231, 231);
-  margin-left: 80px;
+.contact-form{ 
+  padding-top: 20px;
+
 }
 
 .col-contact{
-  width: 100%;
-  height:100%;
+  width: 350px;
+  height:345px;
   flex: 90%;
-  max-width: 50%;
+  max-width: 90%;
   box-sizing: border-box;
   margin: 15px;
   color: #d37e17;
-  opacity: 0.6;
   border-radius: 0.7%;
   padding-right: 30px;
-  padding-top: 50px;
-  margin-left: 24px;
-  background-color: rgb(78, 73, 73);
-  background: url(././images/ropes-contact.jpg) no-repeat center center scroll;
-  background-size: cover;
-}
-
-#cover-text h2 {
-
-  color: khaki ;
-  font-size: 150%;
-  text-align: center;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-#cover-text h4 { 
-
-  color:rgb(0, 0, 0);
+  margin-left: 70px;
+  background-color: rgb(231, 231, 231);
+  opacity: 0.8;
+  box-shadow: 10px 10px 5px grey;
 
 }
 
-#cover-text {
+/*Retreats Html*/
 
-  font-size: 110%;
-  font-family: Oswald;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  text-align: center;
-  
-
-  width: 300px;
-  height: 350px;
-
-  padding-top: 40px;
-  padding-left: 10px;
-
-  background-color: rgba(59, 58, 58, 0.404);
-
-  bottom: 30px;
-  left: 150px;
-
-  position: absolute;
-  float: left;
-
+.spain-card {
+  background-color: #393838;
+  height: 535px;
+  width: 100%;
 }
+
+.spain-info { 
+  position: relative;
+  display:inline-block
+}
+
 
 /*footer*/
 
