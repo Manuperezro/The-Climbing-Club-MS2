@@ -549,6 +549,40 @@ body.dark .search-field i{
   display:inline-block
 }
 
+.col-spain1{
+  flex: 30.30%;
+  max-width: 30.30%;
+  box-sizing: border-box;
+  margin: 15px;
+  color: #d37e17;
+  background-color: rgb(167, 161, 161);
+  display: inline;
+  position: relative;
+
+}
+.col-spain2{
+  flex: 30.30%;
+  max-width: 30.30%;
+  box-sizing: border-box;
+  margin: 15px;
+  color: #d37e17;
+  background-color: rgb(167, 161, 161);
+  display: inline;
+  position: relative;
+
+}
+
+.col-spain3{
+  flex: 30.30%;
+  max-width: 30.30%;
+  box-sizing: border-box;
+  margin: 15px;
+  color: #d37e17;
+  background-color: rgb(167, 161, 161);
+  display: inline;
+  position: relative;
+
+}
 
 /*footer*/
 
