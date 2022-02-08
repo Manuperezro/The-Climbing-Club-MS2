@@ -536,7 +536,9 @@ body.dark .search-field i{
 
 }
 
-/*Retreats Html*/
+/*RETREATS HTML*/
+
+div#map {min-height: 360px;}
 
 .spain-card {
   background-color: #393838;
