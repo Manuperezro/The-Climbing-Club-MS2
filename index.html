@@ -365,45 +365,70 @@
 <!-- Contact Us Section-->
 
 
-<section class="sections-h1">
-  <h1>Contact Us</h1>
-  <div class="inner-contact" id="newsletter">
-    <div class="innerLetter">
-      <div class="row">
-        <div class="col col-contact">
-          <div class="form-newsletter">
-            <form class="contact-form">
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1">Select the service you need information</label>
-                 <select class="form-control" id="exampleFormControlSelect1">
-                 <option>Courses</option>
-                 <option>Retreats</option>
-                 <option>Something else</option>
-                 <option>Private Climbing tuition</option>
-               </select>
-             </div>
-             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Write here your message and press the submit button</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-          </form>
-      </div>
-              <div class="button2">
-                <button type="button" class="btn btn-secondary">Submit</button>
-              </div>
-            </form>
-        </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+		<!--Contact section-->
+		<section id="contact">
+			<div class="container-fluid">
+				<div class="row contact-row">
+					<div class="col-md-6 contact-col">
+						<div class="contact-details animation-element center">
+							<h2 class="contact-heading">Contact us</h2>
+							<a class="email-contact-link" href="mailto:g-travel@email.com">
+								<p>Email: TheClimbingClubl@email.com</p>
+							</a>
+							<p>Customer service: 07/54545454</p>
+							<p>Bookings : 07/8989898</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="contact-form-container animation-element center">
+							<h2 class="contact-heading">Contact Form</h2>
 
+							<form onsubmit="return sendMail(this);" method="POST" class="contact-form">
+								<input type="text" name="name" id="contact-name" class="contact-input"
+                                    placeholder="Name" aria-label="contact form name" required />
+
+								<input type="email" name="email" class="contact-input" id="contact-email"
+                                    placeholder="Email" aria-label="contact form email" required />
+
+								<textarea name="message" id="contact-message" class="contact-input" rows="3"
+                                    placeholder="Message" aria-label="contact form message" required></textarea>
+								<button type="submit" class="link contact-btn submit-btn">
+                                   Contact Now
+                                </button>
+							</form>
+							<!--Modal from bootstrap appears when someone fills out the contact form-->
+							<div class="modal signup-modal" id="contactformModal" tabindex="-1" role="dialog"
+								aria-labelledby="contactformModal" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">
+												Thank You for contacting us.
+											</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="modal-text" aria-hidden="true">&times;</span>
+                                            </button>
+										</div>
+										<div class="modal-text">
+											Thank You for contacting us. We will reply shortly to
+											answer your query.
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary modal-text"
+                                                data-dismiss="modal">
+                                                Close
+                                            </button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end of contact section-->
+ <hr>
 <!-- Footer-->
 <footer>
   <div class="footer-icons">
