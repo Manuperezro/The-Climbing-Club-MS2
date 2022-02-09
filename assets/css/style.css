@@ -371,8 +371,8 @@ body.dark .search-field i{
 
 .testimonials{
   padding: 20px;
-  color:rgb(255, 255, 255);
   text-align: center; 
+  color: #393838;
   
 }
 
@@ -436,12 +436,22 @@ body.dark .search-field i{
   margin: auto;
   overflow: hidden;
   padding:0 20px;
+  color: #393838;
 
+}
+
+.sections-h1 { 
+  color: #393838;
+  padding-top: 50px;
+}
+
+.sections-h1 h1{ 
+  padding-bottom: -25px;
 }
 
 .newsletter{ 
   padding: 20px;
-  color: rgb(255, 255, 255);
+  color: #393838;
   text-align: center; 
   width: 100%;
   background: url(././images/newsletter.jpg) no-repeat center center scroll;
@@ -502,12 +512,13 @@ body.dark .search-field i{
 
 .contact-row {
   height: 380px;
+  color: #393838;
 }
 .contact-details {
   position: absolute;
   text-align: center;
-  margin-top: 3rem;
-  margin-left: 75px;
+  margin-top: -1rem;
+  margin-left: 85px;
 }
 .contact-heading {
   font-size: 3rem;
@@ -523,14 +534,14 @@ body.dark .search-field i{
     text-align:center;
 }
 .email-contact-link{
-    color:#fafafb;
+    color:#b3651d;
 }
 .email-contact-link:hover{
     text-decoration:underline;
 }
 
 .contact-form-container {
-  margin-top: 3rem;
+  margin-top: -2rem;
   position: absolute;
   text-align: center;
   margin-left: 10%;
@@ -555,36 +566,27 @@ body.dark .search-field i{
   display:inline-block
 }
 
-.col-spain1{
+.col-spain1 {
   flex: 30.30%;
   max-width: 30.30%;
   box-sizing: border-box;
   margin: 15px;
-  color: #d37e17;
-  background-color: rgb(167, 161, 161);
+  color: #ffffff;
   display: inline;
   position: relative;
 
+}
+
+.col-spain1 li {
+ text-decoration: none;
+ padding: 7%;
 }
 .col-spain2{
-  flex: 30.30%;
-  max-width: 30.30%;
+  flex: 50.50%;
+  max-width: 75.50%;
   box-sizing: border-box;
   margin: 15px;
-  color: #d37e17;
-  background-color: rgb(167, 161, 161);
-  display: inline;
-  position: relative;
-
-}
-
-.col-spain3{
-  flex: 30.30%;
-  max-width: 30.30%;
-  box-sizing: border-box;
-  margin: 15px;
-  color: #d37e17;
-  background-color: rgb(167, 161, 161);
+  color: #ffffff;
   display: inline;
   position: relative;
 
@@ -598,8 +600,13 @@ body.dark .search-field i{
   font-size: 40px;
 }
 
-/*Retreats Info*/
+/*Retreats Map*/
 div#map {min-height: 360px;}
+
+#map{
+  height: 100%;
+}
+
 
 
 /*Media Queries*/
