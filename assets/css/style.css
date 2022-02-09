@@ -331,6 +331,14 @@ body.dark .search-field i{
     color: rgb(255, 255, 255);
 }
 
+span { 
+  transition: all 0.5s ease ;
+}
+
+span.fade{ 
+  color:#d37e17
+}
+
 #cover-text p { 
     margin-left: 40px;
 }
