@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- 1 Owl Carousel 5-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- 2 Owl Carousel 5--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- font awesome-->
+    <script src="https://kit.fontawesome.com/bc9f53eb72.js" crossorigin="anonymous"></script>
+
+    <!-- goole fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css file-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+    
+    <title>The Climbing Club</title>
+
+</head>
+<body> 
+    <header>
+        <!-----navigation---bar-->
+        <nav>
+          <div class="nav-bar">
+              <i class='bx bx-menu sidebarOpen' ></i>
+              <span class="logo navLogo"><a href="#">The Climbing Club</a></span>
+  
+              <div class="menu">
+                  <div class="logo-toggle">
+                      <span class="logo"><a href="#">The Climbing Club</a></span>
+                      <i class='bx bx-x siderbarClose'></i>
+                  </div>
+  
+                  <ul class="nav-links">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="#retreats">Retreats</a></li>
+                      <li><a href="#courses">Courses</a></li>
+                      <li><a href="#testimonials">Reviews</a></li>
+                      <li><a href="#newsletter">Newsletter</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                      <li><a href="#contact">Enquery</a></li>
+                  </ul>
+              </div>
+  
+              <div class="darkLight-searchBox">
+                  <div class="dark-light">
+                      <i class='bx bx-moon moon'></i>
+                      <i class='bx bx-sun sun'></i>
+                  </div>
+  
+                  <div class="searchBox">
+                     <div class="searchToggle">
+                      <i class='bx bx-x cancel'></i>
+                      <i class='bx bx-search search'></i>
+                     </div>
+  
+                      <div class="search-field">
+                          <input type="text" placeholder="Search...">
+                          <i class='bx bx-search'></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+<!--Enquery Section-->
+
+<section>
+    <div class="sections-h1-enquery container-fluid">
+    <div>
+        <h1>Made Your Enquery</h1>
+    </div>
+    <div class="enquery" id="enquery">
+      <div class="innerEnquery">
+        <div class="row">
+              <div class= "col col-enquery">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">City</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">State</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                  </form>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+<!-- End of Signup section-->
+
+<!-- Footer-->
+
+<footer>
+  <div class="footer-icons">
+    <i class=" fa fa-facebook-official icon-footer" aria-hidden="true"></i>
+    <i class="fa fa-instagram icon-footer" aria-hidden="true"></i>
+    <i class="fa fa-twitter-square icon-footer" aria-hidden="true"></i>
+    <i class="fa fa-linkedin-square icon-footer" aria-hidden="true"></i>
+  </div>
+
+</footer>
+
+<!--0. Jquery Cdn-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--1.  Owl Caousel min-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--0. cdn Bootrrapt Cdn-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!--1 Manin Js file-->
+<script src="./assets/script/main.js"></script>
+<script src=".assets/script/retreats.js"></script>
+
+</body>
+</html>
