@@ -53,8 +53,6 @@
                 <li><a href="retreats.html">Retreats</a></li>
                 <li><a href="courses.html">Courses</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <li><a href="enquiries.html">Enquery</a></li>
               </ul>
           </div>
@@ -112,16 +110,16 @@
         <h1>Good to know:</h1>
         <ul>
            <li>
-            <button type="button-card" class="btn btn-secondary button-map">Crags</button>
+            <button type="button-card" class="btn btn-secondary button-map" onclick="retreatButton(crags)">Crags</button>
            </li>
            <li>
-            <button type="button-card" class="btn btn-secondary button-map">Hotel</button>
+            <button type="button-card" class="btn btn-secondary button-map" onclick="retreatButton(hotel)">Hotel</button>
            </li>
            <li>
-            <button type="button-card" class="btn btn-secondary button-map">Hiking routes</button>
+            <button type="button-card" class="btn btn-secondary button-map" onclick="retreatButton()">Hiking routes</button>
            </li>
            <li>
-            <button type="button-card" class="btn btn-secondary button-map">Natural Monuments</button>
+            <button type="button-card" class="btn btn-secondary button-map" onclick="retreatButton()">Natural Monuments</button>
            </li>
         </ul>
       </div>
@@ -470,6 +468,7 @@
   <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNSS0CI1PDKUiM-lS9_tZYTYowu5-8GgU&callback=initMap"></script>
   <script src="assets/script/retreats.js"></script>
+  <script src="assets/script/buttons.js"></script>
 
 </body>
 </html>
