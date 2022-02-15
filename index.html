@@ -387,15 +387,17 @@
                 <form onsubmit="return sendMail(this);" method="POST" class="contact-form">
                   <input type="text" name="name" id="contact-name" class="contact-input"
                                       placeholder="Name" aria-label="contact form name" required />
-  
-                  <input type="email" name="email" class="contact-input" id="contact-email"
-                                      placeholder="Email" aria-label="contact form email" required />
-  
-                  <textarea name="message" id="contact-message" class="contact-input" rows="3"
-                                      placeholder="Message" aria-label="contact form message" required></textarea>
-                  <button type="submit" class="link contact-btn submit-btn">
-                                     Contact Now
-                                  </button>
+   
+                   <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="contact-input"> 
+                        </label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type here">
+                        </textarea>
+                   </div>
+         
+                     <div class="buttonEmail">
+                       <button type="button" class="btn btn-secondary">Email Us</button>
+                   </div>
                 </form>
   
               </div>
