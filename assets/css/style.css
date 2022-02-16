@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:wght@300;500;700&display=swap');
+/* ===== Google Font Import - Poppins ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 /*---------------------------main body*/
 
@@ -6,6 +8,9 @@ body  {
     height: 100vh;
     background-color: var(--body-color);
     overflow-x: hidden;
+    color: #6c757d!important;
+    background-color: #bdb2b2;
+
 
 }
 
@@ -22,7 +27,7 @@ footer {
 }
 
 .sections-h1{
-  color:lightslategray;
+  color: #6c757d!important;
   text-align: center;
 }
 
@@ -31,21 +36,29 @@ border-radius: 5px;
 }
 /* ===== Colours ===== */
 
+/* ===== Google Font Import - Poppins ===== */
+
+
+/* ===== Colours ===== */
 :root{
   --body-color: #E4E9F7;
-  --nav-color: #d37e17;
-  --side-nav: #ffffff;
-  --text-color: rgb(0, 0, 0);
+  --nav-color: #e07510;
+  --side-nav: #010718;
+  --text-color: #ebf0f5!important;
   --search-bar: #F2F2F2;
   --search-text: #010718;
 }
-/*---------------------------navigation bar*/
+
+body{
+  height: 100vh;
+  background-color: var(--body-color);
+}
 
 body.dark{
   --body-color: #18191A;
   --nav-color: #242526;
   --side-nav: #242526;
-  --text-color: rgb(255, 255, 255);
+  --text-color: #CCC;
   --search-bar: #242526;
 }
 
@@ -255,57 +268,6 @@ body.dark .search-field i{
   color: var(--text-color);
 }
 
-@media (max-width: 790px) {
-  nav .nav-bar .sidebarOpen{
-      display: block;
-  }
-
-  .menu{
-      position: fixed;
-      height: 100%;
-      width: 320px;
-      left: -100%;
-      top: 0;
-      padding: 20px;
-      background-color: var(--side-nav);
-      z-index: 100;
-      transition: all 0.4s ease;
-  }
-
-  nav.active .menu{
-      left: -0%;
-  }
-
-  nav.active .nav-bar .navLogo a{
-      opacity: 0;
-      transition: all 0.3s ease;
-  }
-
-  .menu .logo-toggle{
-      display: block;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  }
-
-  .logo-toggle .siderbarClose{
-      color: var(--text-color);
-      font-size: 24px;
-      cursor: pointer;
-  }
-
-  .nav-bar .nav-links{
-      flex-direction: column;
-      padding-top: 30px;
-  }
-
-  .nav-links li a{
-      display: block;
-      margin-top: 20px;
-  }
-}
-
 /*---------------------------Land page and hero image*/
 
 .box {
@@ -330,7 +292,7 @@ body.dark .search-field i{
 .cover-text{ 
   z-index: 999;
   position: absolute;
-  font-size: 30px;
+  font-size: 70px;
 }
 
 #hero-outer{
@@ -347,7 +309,7 @@ body.dark .search-field i{
   z-index: 999;
   bottom: 80%;
   font-size: 50px;
-  color: rgb(255, 255, 255);
+  color: #FFF;
   padding-left: 5%;
   padding-top: 5%;
 }
@@ -368,7 +330,7 @@ span.fade{
     margin-left: 80px;
     outline: none;
     border: none;
-    color: rgb(255, 255, 255);
+    color:#6c757d!important;
     padding: 8px 22px;
     border-radius: 20px;
     font-size: 14px;
@@ -386,7 +348,7 @@ span.fade{
 
 .card-body{ 
   background-color: #393838;
-  color: #FFF;
+  color: #6c757d!important;
   text-align: center;
 }
 
@@ -395,14 +357,14 @@ span.fade{
 }
 
 .owl-prev{
-  color:rgb(168, 163, 163)
+  color: #6c757d!important;
 }
 /*---------------------------Customers Reviews*/
 
 .testimonials{
   padding: 20px;
   text-align: center; 
-  color: #393838;
+  color: #6c757d!important;
   
 }
 
@@ -465,12 +427,12 @@ span.fade{
   margin: auto;
   overflow: hidden;
   padding:0 20px;
-  color: #393838;
+  color: #6c757d!important;
 
 }
 
 .sections-h1 { 
-  color: #393838;
+  color: #6c757d!important;
   padding-top: 50px;
 }
 
@@ -480,7 +442,7 @@ span.fade{
 
 .newsletter{ 
   padding: 20px;
-  color: #393838;
+  color: #6c757d!important;
   text-align: center; 
   width: 100%;
   background: url(././images/newsletter.jpg) no-repeat center center scroll;
@@ -497,7 +459,7 @@ span.fade{
   max-width: 90%;
   box-sizing: border-box;
   margin: 15px;
-  color: #d37e17;
+  color: #6c757d!important;
   border-radius: 0.7%;
   padding-right: 30px;
   padding-top: 50px;
@@ -519,7 +481,7 @@ span.fade{
 .button2 {
   outline: none;
   border: none;
-  color: rgb(255, 255, 255);
+  color: #6c757d!important;
   padding: 8px 22px;
   border-radius: 20px;
   font-size: 14px;
@@ -542,7 +504,7 @@ span.fade{
 .contact{
   padding: 20px;
   text-align: center; 
-  color: #393838;
+  color: #6c757d!important;
   
 }
 
@@ -556,7 +518,7 @@ span.fade{
   flex: 46.3%;
   box-sizing: border-box;
   margin: 22px;
-  color: #d37e17;
+  color: #6c757d!important;
   background-color: rgb(167, 161, 161);
   border-color: #FFF;
 }
@@ -586,7 +548,7 @@ span.fade{
 .buttonEmail {
   outline: none;
   border: none;
-  color: rgb(255, 255, 255);
+  color: #6c757d!important;
   padding: 8px 22px;
   border-radius: 20px;
   font-size: 14px;
@@ -609,14 +571,11 @@ span.fade{
 }
 
 .col-spain1 {
-  flex: 30.30%;
-  max-width: 30.30%;
   box-sizing: border-box;
   margin: 15px;
-  color: #393838;
+  color: #6c757d!important;
   display: inline;
   position: relative;
-  background-color: #CCC;
   text-align: center;
 
 }
@@ -625,12 +584,13 @@ span.fade{
  text-decoration: none;
  padding: 7%;
 }
+
 .col-spain2{
   flex: 50.50%;
   max-width: 75.50%;
   box-sizing: border-box;
   margin: 15px;
-  color: #393838;
+  color: #6c757d!important;
   display: inline;
   position: relative;
 
@@ -659,7 +619,7 @@ div#map {min-height: 360px;}
 }
 
 .button-map{
-  width: 180px;
+  width: -webkit-fill-available;
   text-align: center;
 }
 
@@ -700,21 +660,16 @@ padding-top: 50px;
 
 }
 
-.col-retreat{
-  width: 350px;
-  height:300px;
-  flex: 90%;
+.col-retreat {
+  width: 396px;
   max-width: 90%;
   box-sizing: border-box;
   margin: 15px;
-  color: #393838;
+  color: #838383!important;
   border-radius: 0.7%;
   padding-right: 30px;
   padding-top: 20px;
-  margin-left: 70px;
-  background-color: rgb(231, 231, 231);
-  opacity: 0.8;
-  box-shadow: 10px 10px 5px grey;
+
 }
 
 /*Newsletter */
@@ -892,6 +847,9 @@ form .input-box span.details{
    transition: all 0.3s ease;
    background: linear-gradient(135deg, #c5c4bd, #ca7b14);
  }
+
+
+
  form .button input:hover{
   /* transform: scale(0.99); */
   background: linear-gradient(135deg, #ca7b14,#c5c4bd,) ;
