@@ -3,20 +3,22 @@ function retreatButton(element){
     //get name for the button 
     const name = element.value; 
     
+    let marker;
 
     var locations = [
-        { name: "crag", latlng: {lat: 36.91739,lng: -4.77294 }},  
-        { name: "crag", latlng: {lat: 36.91697,lng: -4.77371 }},  
-        { name: "crag", latlng: {lat: 36.91591,lng: -4.77232}},  
-        { name: "crag", latlng: {lat: 36.91643,lng: -4.77304 }},    
-        { name: "hotel", latlng:{lat: 36.910064471231,lng:  -4.760221912241495 }},  
-        { name: "hikingRoutes", latlng:{lat: 36.91143523524193, lng:  -4.7670860779893065 }}, 
-        { name: "NaturalBeauty", latlng:{lat: 36.91452444245009, lng:  -4.755477217618757 }},  
+        { name: "crag", zoom: 15, latlng: {lat: 36.91739,lng: -4.77294 }},  
+        { name: "crag", zoom: 15, latlng: {lat: 36.91697,lng: -4.77371 }},  
+        { name: "crag", zoom: 8, latlng: {lat: 36.91591,lng: -4.77232}},  
+        { name: "crag", zoom: 8, latlng: {lat: 36.91643,lng: -4.77304 }},    
+        { name: "hotel", zoom: 8, latlng:{lat: 36.910064471231,lng:  -4.760221912241495 }},  
+        { name: "hikingRoutes", zoom: 8, latlng:{lat: 36.91143523524193, lng:  -4.7670860779893065 }}, 
+        { name: "NaturalBeauty", zoom: 8, latlng:{lat: 36.91452444245009, lng:  -4.755477217618757 }},  
       ];
 
       //set a default  
-    const defaultInfo = [{ name: "Hiking Routes", latlng:{lat: 36.91143523524193, lng:  -4.7670860779893065 }}] 
-    let retreatInfo = locations.filter(location =>  { return location.name == name; } ); 
+    const defaultInfo = [{ name: "Hiking Routes", zoom: 15, latlng:{lat: 36.91143523524193, lng:  -4.7670860779893065 }}] 
+    let retreatInfo = locations.filter( location => location.name === name);
+    console.log(retreatInfo[0].zoom);
 
     if (retreatInfo.length === 0) {
         retreatInfo = defaultInfo;
@@ -24,23 +26,26 @@ function retreatButton(element){
 
 
     var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
+        zoom : retreatInfo[0].zoom,
         center: {
             lat: 36.92958476555766,
             lng: -4.798181557169018  
         }
+
     });
 
-    console.log("retreatInfo[0]", retreatInfo[0].latlng);
-    var marker = new google.maps.Marker({
-        position: retreatInfo[0].latlng,
-        map,
-        title: name
-    });
-    
-    
-// To add the marker to the map, call setMap();
-marker.setMap(map);
+    for( let i = 0; i < retreatInfo.length; i++) { 
+        console.log(`retreatInfo ${i}`, retreatInfo[i].latlng);
+            marker = new google.maps.Marker({
+            position: retreatInfo[i].latlng,
+            map,
+            title: name
+        });
+        
+        // To add the marker to the map, call setMap();
+        marker.setMap(map);
+
+    }
 
 };
 

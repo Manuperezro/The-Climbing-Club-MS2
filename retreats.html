@@ -391,33 +391,33 @@
         
           <!--Retreat to Norway -->
           
-       <section>
-       <div class="container-fluid">
-         <div class="row retreat-info-row">
-           <div class="col-6 col-spain1">
-             <h1>Good to know:</h1>
-             <ul>
-              <li>
-                <button type="button-card" class="btn btn-secondary button-map" onclick="retreatButton()">Crags</button>
-               </li>
-               <li>
-                <button type="button-card" class="btn btn-secondary button-map" onclick="retreatButton()">Hotel</button>
-               </li>
-               <li>
-                <button type="button-card" class="btn btn-secondary button-map" onclick="retreatButton()">Hiking routes</button>
-               </li>
-               <li>
-                <button type="button-card" class="btn btn-secondary button-map" onclick="retreatButton()">Natural Monuments</button>
-               </li>
-             </ul>
-           </div>
-           <div class="col-6 col-spain2">
-             <div id="map"></div>
-           </div>
-         </div>
-       </div>
-     
-     </section>
+          <section>
+            <div class="container-fluid">
+              <div class="row retreat-info-row">
+                <div class="col-md-3 col-spain1">
+                  <h1>Good to know:</h1>
+                  <ul>
+                     <li>
+                      <button type="button-card" value="crag" class="btn btn-secondary button-map" onclick="retreatButton(this)">Crags</button>
+                     </li>
+                     <li>
+                      <button type="button-card" value="hotel" class="btn btn-secondary button-map" onclick="retreatButton(this)">Hotel</button>
+                     </li>
+                     <li>
+                      <button type="button-card" value="hikingRoutes" class="btn btn-secondary button-map" onclick="retreatButton(this)">Hiking routes</button>
+                     </li>
+                     <li>
+                      <button type="button-card" value="NaturalBeauty" class="btn btn-secondary button-map" onclick="retreatButton(this)">Natural Monuments</button>
+                     </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-spain2">
+                  <div id="map2"></div>
+                </div>
+              </div>
+            </div>
+          
+          </section>
      
      <section class="sections-h1-retreats">
        <div class="retreats-spicif" id="retreat-spain">
