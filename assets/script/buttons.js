@@ -8,11 +8,11 @@ function retreatButton(element){
     var locations = [
         { name: "crag", zoom: 15, latlng: {lat: 36.91739,lng: -4.77294 }},  
         { name: "crag", zoom: 15, latlng: {lat: 36.91697,lng: -4.77371 }},  
-        { name: "crag", zoom: 8, latlng: {lat: 36.91591,lng: -4.77232}},  
-        { name: "crag", zoom: 8, latlng: {lat: 36.91643,lng: -4.77304 }},    
-        { name: "hotel", zoom: 8, latlng:{lat: 36.910064471231,lng:  -4.760221912241495 }},  
-        { name: "hikingRoutes", zoom: 8, latlng:{lat: 36.91143523524193, lng:  -4.7670860779893065 }}, 
-        { name: "NaturalBeauty", zoom: 8, latlng:{lat: 36.91452444245009, lng:  -4.755477217618757 }},  
+        { name: "crag", zoom: 15, latlng: {lat: 36.91591,lng: -4.77232}},  
+        { name: "crag", zoom: 15, latlng: {lat: 36.91643,lng: -4.77304 }},    
+        { name: "hotel", zoom: 15, latlng:{lat: 36.910064471231,lng:  -4.760221912241495 }},  
+        { name: "hikingRoutes", zoom: 15, latlng:{lat: 36.91143523524193, lng:  -4.7670860779893065 }}, 
+        { name: "NaturalBeauty", zoom: 15, latlng:{lat: 36.91452444245009, lng:  -4.755477217618757 }},  
       ];
 
       //set a default  
