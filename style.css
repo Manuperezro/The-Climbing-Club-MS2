@@ -321,10 +321,13 @@ body.dark .search-field i{
     
 }
 
-.cover-text{ 
-  z-index: 999 ;
+.cover-text {
+  z-index: 999;
   position: absolute;
   font-size: 85px;
+  color: black;
+  background: white;
+  opacity: 0.6;
 }
 
 .hero-image  {
@@ -692,6 +695,10 @@ padding-top: 50px;
   padding-right: 30px;
   padding-top: 20px;
   margin-left: 70px;
+}
+
+.col-retreat p {
+  margin-left: 40px;
 }
 
 /*Newsletter */

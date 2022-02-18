@@ -6,13 +6,18 @@ function retreatButton(element){
     let marker;
 
     var locations = [
-        { name: "crag", zoom: 15, latlng: {lat: 36.91739,lng: -4.77294 }},  
-        { name: "crag", zoom: 15, latlng: {lat: 36.91697,lng: -4.77371 }},  
-        { name: "crag", zoom: 15, latlng: {lat: 36.91591,lng: -4.77232}},  
-        { name: "crag", zoom: 15, latlng: {lat: 36.91643,lng: -4.77304 }},    
-        { name: "hotel", zoom: 15, latlng:{lat: 36.910064471231,lng:  -4.760221912241495 }},  
-        { name: "hikingRoutes", zoom: 15, latlng:{lat: 36.91143523524193, lng:  -4.7670860779893065 }}, 
-        { name: "NaturalBeauty", zoom: 15, latlng:{lat: 36.91452444245009, lng:  -4.755477217618757 }},  
+        { name: "crag", zoom: 10, latlng: {lat: 36.91739,lng: -4.77294 }},   
+        { name: "crag", zoom: 10, latlng: {lat: 36.93145991404489, lng: -4.801257372414595 }},  
+        { name: "crag", zoom: 10, latlng: {lat:  36.89268587354349, lng:  -4.807523013393964}},  
+        { name: "crag", zoom: 10, latlng: {lat: 36.90682524054259,lng:  -4.749072315457934 }}, 
+        { name: "crag", zoom: 10, latlng: {lat: 36.92988188676995, lng: -4.74632573347915}},
+        { name: "crag", zoom: 10, latlng: {lat:  36.91753097893374,lng: -4.744780781116084}},     
+        { name: "hotel", zoom: 10, latlng:{lat: 36.910064471231,lng:  -4.760221912241495 }},  
+        { name: "hikingRoutes", zoom: 10, latlng:{lat: 36.91143523524193, lng:  -4.7670860779893065 }}, 
+        { name: "hikingRoutes", zoom: 10, latlng:{lat: 36.89210916395455, lng:  -4.807769202726911 }},  
+        { name: "hikingRoutes", zoom: 10, latlng:{lat:36.92038549128048,  lng:  -4.801503562587809 }}, 
+        { name: "NaturalBeauty", zoom: 10, latlng:{lat: 36.90287673699665, lng:  -4.781405222022504 }}, 
+        { name: "NaturalBeauty", zoom: 10, latlng:{lat: 36.900827832742124, lng:  -4.768882908643823 }},     
       ];
 
       //set a default  
