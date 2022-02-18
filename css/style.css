@@ -554,8 +554,12 @@ span.fade{
 
 }
 
-/*RETREATS HTML*/
+/*retreats.html*/
 
+.button-map{
+  width:170px;
+
+}
 .spain-card {
   background-color: #393838;
   height: 535px;
@@ -721,7 +725,7 @@ padding-top: 50px;
 
 }
 
-/* Enquery */
+/* Enquery.html */
 
 .bg{ 
   background: url(../assets/images/peru2.jpg) no-repeat;
@@ -869,6 +873,71 @@ form .user-details .input-box{
   .container .content .category{
     flex-direction: column;
   }
+}
+
+/*Weather API*/
+
+/* .py-2 {
+  padding-top: 7.5rem!important;
+  padding-bottom: 0.5rem!important;
+} */
+
+.header h1{
+ padding-top: 90px;
+}
+
+.input{
+  text-align: center;
+  margin: 100px auto;
+}
+
+input[type="submit"]{
+  padding: 15px 30px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 1px;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.input input[type="text"]{
+  width: 600px;
+  height: 55px;
+  padding: 5px 10px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 1px;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.card{
+  width: 50%;
+  background: #e7e7e7;
+  height: 40vh;
+  margin: 50px auto;
+  border-radius: 2px;
+}
+
+
+.close{
+  float: right;
+  margin-top: -2px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.card h1{
+  padding: 5px 0;
+  text-align: center;
+}
+
+.card p{
+  text-align: center;
+  margin:40px 0;
+  font-size:20px;
 }
 
 /*Media Queries*/
