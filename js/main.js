@@ -46,7 +46,7 @@ body.addEventListener("click" , e =>{
 
 
 
-//Swiper
+//Swiper Owl carousel  code inspired from Coding River Youtube Channel.
 
 //Initialize owl Carousel
 
@@ -82,7 +82,9 @@ $(document).ready(function(){
     });
 });
 
-// call Image//
+
+
+// call Image to create and effect in the call texts //
 
 // const text = document.querySelector(".call");
 // const strText = text.textContent;
