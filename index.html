@@ -29,9 +29,14 @@
     <!-- custom css file-->
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-    
-    <title>The Climbing Club</title>
+     <!-- Gmail.JS-->
+    <script type="text/javascript">
+      (function(){
+         emailjs.init("user_moWGT6QUo99NFP4O1RopU");
+      })();
+   </script>
 
+    <title>The Climbing Club</title>
 </head>
 <body> 
 
@@ -385,19 +390,17 @@
             </div>
             <div class="col col-contact">
               <div class="contact-form">
-                <form onsubmit="return sendMail(this);" method="POST" class="contact-form">
-                  <input type="text" name="name" id="contact-name" class="contact-input"
+                <form onsubmit="return sendMail(this);" class="contact-form">
+                  <input type="text" name="emailaddress" id="emailaddress" class="contact-input email"
                                       placeholder="Name" aria-label="contact form name" required />
    
                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="contact-input"> 
-                        </label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type here">
+                        <textarea class="form-control email-txt" name="text" id="text" rows="3" placeholder="Type here">
                         </textarea>
                    </div>
          
                      <div class="buttonEmail">
-                       <button type="button" class="btn btn-secondary">Email Us</button>
+                       <button type="submit" class="submit btn btn-secondary">Email Us</button>
                    </div>
                 </form>
   
@@ -433,6 +436,12 @@
 
 <!--1 Manin Js file-->
 <script src="js/main.js"></script>
+
+
+<!-- Email Js-->
+
+<script src="js/sendEmail.js"></script>
+
 
 </body>
 </html>
