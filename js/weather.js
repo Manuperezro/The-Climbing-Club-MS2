@@ -1,13 +1,7 @@
-var input = document.querySelector('.input_text');
-var main = document.querySelector('#name');
-var temp = document.querySelector('.temp');
-var desc = document.querySelector('.desc');
-var clouds = document.querySelector('.clouds');
-var button= document.querySelector('.submit');
-
+//fetch data from openweather API
 
 button.addEventListener('click', function(name){
-fetch('http://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid={cafa79d3ecd466d1aa8ed88778ab568c}')
+  fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputText.value+'&appid=cafa79d3ecd466d1aa8ed88778ab568c')
 .then(response => response.json())
 .then(data => {
   var tempValue = data['main']['temp'];
@@ -20,6 +14,6 @@ fetch('http://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid={c
   input.value ="";
 
 })
-
+// Error Alert 
 .catch(err => alert("Wrong city name!"));
 })
