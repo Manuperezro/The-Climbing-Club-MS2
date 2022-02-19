@@ -29,181 +29,182 @@
     <!-- custom css file-->
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-     <!-- Gmail.JS-->
-    <script type="text/javascript">
-      (function(){
-         emailjs.init("user_moWGT6QUo99NFP4O1RopU");
-      })();
-   </script>
+     <!-- Email.JS-->
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+
+     <script>
+        (function(){
+          emailjs.init("user_moWGT6QUo99NFP4O1RopU");
+        })();
+     </script>
 
     <title>The Climbing Club</title>
 </head>
 <body> 
 
-    <header>
-        <!-----navigation---bar-->
-        <nav>
-        <div class="nav-bar">
-            <i class='bx bx-menu sidebarOpen' ></i>
-            <span class="logo navLogo"><a href="#">TheClimbingClub</a></span>
+  <header>
+      <!--       navigation--bar-->
+      <nav>
+      <div class="nav-bar">
+          <i class='bx bx-menu sidebarOpen' ></i>
+          <span class="logo navLogo"><a href="#">TheClimbingClub</a></span>
 
-            <div class="menu">
-                <div class="logo-toggle">
-                    <span class="logo"><a href="#">TheClimbingClub</a></span>
-                    <i class='bx bx-x siderbarClose'></i>
+          <div class="menu">
+              <div class="logo-toggle">
+                  <span class="logo"><a href="#">TheClimbingClub</a></span>
+                  <i class='bx bx-x siderbarClose'></i>
+              </div>
+
+              <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="retreats.html">Retreats</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="checkweather.html">Weather</a></li>
+                <li><a href="enquiries.html">Enquery</a></li>
+              </ul>
+          </div>
+
+          <div class="darkLight-searchBox">
+              <div class="dark-light">
+                  <i class='bx bx-moon moon'></i>
+                  <i class='bx bx-sun sun'></i>
+              </div>
+              <div class="searchBox">
+                <div class="searchToggle">
+                 <i class='bx bx-x cancel'></i>
+                 <i class='bx bx-search search'></i>
                 </div>
 
-                <ul class="nav-links">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="retreats.html">Retreats</a></li>
-                  <li><a href="courses.html">Courses</a></li>
-                  <li><a href="#testimonials">Reviews</a></li>
-                  <li><a href="#newsletter">Newsletter</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  <li><a href="weather.html">Check Weather</a></li>
-                  <li><a href="enquiries.html">Enquery</a></li>
-                </ul>
-            </div>
-
-            <div class="darkLight-searchBox">
-                <div class="dark-light">
-                    <i class='bx bx-moon moon'></i>
-                    <i class='bx bx-sun sun'></i>
-                </div>
-
-                <div class="searchBox">
-                   <div class="searchToggle">
-                    <i class='bx bx-x cancel'></i>
-                    <i class='bx bx-search search'></i>
-                   </div>
-
-                    <div class="search-field">
-                        <input type="text" placeholder="Search...">
-                        <i class='bx bx-search'></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    </header>
-
-    <!--hero section-->
-
-<section id="hero-outer">
-
-   <div class="box">
-       <img src="assets/images/land.jpg" alt="climber shape in the sunset" data-ride="carousel">
-   </div>
-
-
-   <div class="container-fluid hero-image">
-    <div class="row">
-     <div class="col-12">
-      <div class="cover-text">
-       <p class="call">
-       The Climbing Club 
-       </p>
-       <!-- <div class="button1">
-        <button type="button" class="btn btn-secondary">Discover more</button>
-      </div> -->
-       </div>
+                 <div class="search-field">
+                     <input type="text" id="search" placeholder="Search...">
+                     <i class='bx bx-search'></i>
+                 </div>
+             </div>
+          </div>
       </div>
-     </div>
-   </div>
-</section>
+  </nav>
+  </header>
 
-     <!--Products Section Slider-->
-
-     <!--Inspired, copy and modified from a Youtube tutorial Swapnil Codes Channel-->
-     
-     <!--Retreats-->
+  <!--hero section-->
 
 <section>
-  <div class="container-fluid my-5">
-    <h1 class="text-center fw bold display-1 mb-3" id="retreats"> <span class="text-muted">Climbing</span><span class="text-warning">Retreats</span></h1>
-    <div class="row mt-5">
-      <div class="owl-carousel owl-theme">
-        <div class="item mb-4">
-          <div class="card border- shadow">
-            <img  src="assets/images/Spain4.jpg" alt="mountain in Spain" class="card-img-top">
 
-            <div class="card-body">
+ <div class="box">
+     <img src="assets/images/land.jpg" alt="climber shape in the sunset" data-ride="carousel">
+ </div>
 
-              <h4>Spain £500</h4>
-              <a href="retreats.html" target="_blank"><button type="button-card" class="btn btn-secondary">More</button></a>
-            </div>
-          </div>
-        </div>
 
-        <!--Item 1 Ends-->
-
-        <div class="item mb-4">
-          <div class="card border- shadow">
-            <img  src="assets/images/Greek-1.jpg" alt="mountain in Spain" class="card-img-top">
-
-            <div class="card-body">
-              <h4>Greek £500</h4>
-              <button type="button-card" class="btn btn-secondary">More</button>
-            </div>
-          </div>
-        </div>
-
-        <!--Items 2 Ends-->
-
-        <div class="item mb-4">
-          <div class="card border- shadow">
-            <img  src="assets/images/Peru5.jpg" alt="mountain in Spain" class="card-img-top">
-
-            <div class="card-body">
-
-              <h4>Peru £500</h4>
-              <a href="retreats.html" target="_blank"><button type="button-card" class="btn btn-secondary">More</button></a>
-
-            </div>
-          </div>
-        </div>
-
-        <!--Item 3  Ends-->
-
-        <div class="item mb-4">
-          <div class="card border- shadow">
-            <img  src="assets/images/Norway.jpg" alt="mountain in Spain" class="card-img-top">
-
-            <div class="card-body">
-
-              <h4>Norway £500</h4>
-              <a href="retreats.html" target="_blank"><button type="button-card" class="btn btn-secondary">More</button></a>
-
-            </div>
-          </div>
-        </div>
-
-        <!--Item 4  Ends-->
-
-        <div class="item mb-4">
-          <div class="card border- shadow">
-            <img  src="assets/images/Nepal-land.jpg" alt="mountain in Spain" class="card-img-top">
-
-            <div class="card-body">
-
-              <h4>Nepal £500</h4>
-              <a href="retreats.html" target="_blank"><button type="button-card" class="btn btn-secondary">More</button></a>
-
-            </div>
-          </div>
-        </div>
-
-        <!--Items Ends-->
-
+ <div class="container-fluid hero-image">
+  <div class="row">
+   <div class="col-12">
+    <div class="cover-text">
+     <p class="call">
+     The Climbing Club 
+     </p>
+     <!-- <div class="button1">
+      <button type="button" class="btn btn-secondary">Discover more</button>
+    </div> -->
+     </div>
     </div>
+   </div>
+ </div>
+</section>
 
-    </div>
+   <!--Products Section Slider-->
+
+   <!--Inspired, copy and modified from a Youtube tutorial Swapnil Codes Channel-->
+   
+   <!--Retreats-->
+
+<section class="retreats">
+<div class="container-fluid my-5">
+  <h1 class="text-center fw bold display-1 mb-3" id="retreats"> <span class="text-muted">Climbing</span><span class="text-warning">Retreats</span></h1>
+  <div class="row mt-5">
+    <div class="owl-carousel owl-theme">
+      <div class="item mb-4">
+        <div class="card border- shadow">
+          <img  src="assets/images/Spain4.jpg" alt="mountain in Spain" class="card-img-top">
+
+          <div class="card-body">
+
+            <h4>Spain £500</h4>
+            <a href="retreats.html" target="_blank"><button type="button-card" class="btn btn-secondary">More</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!--Item 1 Ends-->
+
+      <div class="item mb-4">
+        <div class="card border- shadow">
+          <img  src="assets/images/Greek-1.jpg" alt="mountain in Spain" class="card-img-top">
+
+          <div class="card-body">
+            <h4>Greek £500</h4>
+            <button type="button-card" class="btn btn-secondary">More</button>
+          </div>
+        </div>
+      </div>
+
+      <!--Items 2 Ends-->
+
+      <div class="item mb-4">
+        <div class="card border- shadow">
+          <img  src="assets/images/Peru5.jpg" alt="mountain in Spain" class="card-img-top">
+
+          <div class="card-body">
+
+            <h4>Peru £500</h4>
+            <a href="retreats.html" target="_blank"><button type="button-card" class="btn btn-secondary">More</button></a>
+
+          </div>
+        </div>
+      </div>
+
+      <!--Item 3  Ends-->
+
+      <div class="item mb-4">
+        <div class="card border- shadow">
+          <img  src="assets/images/Norway.jpg" alt="mountain in Spain" class="card-img-top">
+
+          <div class="card-body">
+
+            <h4>Norway £500</h4>
+            <a href="retreats.html" target="_blank"><button type="button-card" class="btn btn-secondary">More</button></a>
+
+          </div>
+        </div>
+      </div>
+
+      <!--Item 4  Ends-->
+
+      <div class="item mb-4">
+        <div class="card border- shadow">
+          <img  src="assets/images/Nepal-land.jpg" alt="mountain in Spain" class="card-img-top">
+
+          <div class="card-body">
+
+            <h4>Nepal £500</h4>
+            <a href="retreats.html" target="_blank"><button type="button-card" class="btn btn-secondary">More</button></a>
+
+          </div>
+        </div>
+      </div>
+
+      <!--Items Ends-->
+
   </div>
+
+  </div>
+</div>
 </section>
 
  <!--Courses-->
 
- <section>
+ <section class="courses">
   <div class="container-fluid my-5">
     <h1 class="text-center fw bold display-1 mb-3" id="courses"> <span class="text-muted">Climbing</span><span class="text-warning">Courses</span></h1>
     <div class="row mt-5 row-eq-height">
@@ -276,7 +277,7 @@
 
         <!--Customers Reviews-->
 
-  <section>
+  <section class="reviews">
     <div class="testimonials" id="testimonials">
       <div class="inner">
         <h1>Testimonials</h1>
@@ -344,7 +345,7 @@
 
 <!--Signup Section-->
 
-<section class="sections-h1">
+<section class="sections-h1 news">
   <h1>Join Our News Letter !</h1>
   <div class="newsletter" id="newsletter">
     <div class="innerLetter">
@@ -357,7 +358,7 @@
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
               <div class="button2">
-                <button type="button" class="btn btn-secondary">Join Us</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Join Us</button>
               </div>
             </form>
            </div>
@@ -366,6 +367,28 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Succesfully Join ! </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Thanks for Join Our Magazine ! </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 
@@ -374,7 +397,7 @@
 <!-- Contact Us Section-->
 		<!-- Contact section -->
 
-    <section>
+    <section class="contact-us">
       <div class="contact" id="contact">
         <div class="inner">
           <h1>Contact US</h1>
@@ -391,16 +414,21 @@
             <div class="col col-contact">
               <div class="contact-form">
                 <form onsubmit="return sendMail(this);" class="contact-form">
-                  <input type="text" name="emailaddress" id="emailaddress" class="contact-input email"
-                                      placeholder="Name" aria-label="contact form name" required />
-   
+
+                  <input type="text" name="name" id="name" class="contact-input name"
+                     placeholder="Name" aria-label="contact form name" required />
+
+                  <input type="text" name="emailaddress" id="emailAddress" class="contact-input email"
+                    placeholder="Email address" aria-label="contact form email" required />
+
                    <div class="mb-3">
                         <textarea class="form-control email-txt" name="text" id="text" rows="3" placeholder="Type here">
                         </textarea>
                    </div>
          
                      <div class="buttonEmail">
-                       <button type="submit" class="submit btn btn-secondary">Email Us</button>
+                       <button onclick="sendMail()" type="submit" class="submit btn btn-secondary" data-bs-toggle="modal2" data-bs-target="#contactModal">
+                        Email Us</button>
                    </div>
                 </form>
   
@@ -409,6 +437,28 @@
             </div>
           </div>
       </div>
+
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Thanks for Contac Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal2" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Email Succesfully send</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal2">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
 		<!-- end of contact section-->
@@ -439,7 +489,6 @@
 
 
 <!-- Email Js-->
-
 <script src="js/sendEmail.js"></script>
 
 

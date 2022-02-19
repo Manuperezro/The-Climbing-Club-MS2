@@ -52,7 +52,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="retreats.html">Retreats</a></li>
                     <li><a href="courses.html">Courses</a></li>
-                    <li><a href="weather.html">Check Weather</a></li>
+                    <li><a href="checkweather.html">Weather</a></li>
                     <li><a href="enquiries.html">Enquery</a></li>
                   </ul>
               </div>
@@ -61,18 +61,6 @@
                   <div class="dark-light">
                       <i class='bx bx-moon moon'></i>
                       <i class='bx bx-sun sun'></i>
-                  </div>
-  
-                  <div class="searchBox">
-                     <div class="searchToggle">
-                      <i class='bx bx-x cancel'></i>
-                      <i class='bx bx-search search'></i>
-                     </div>
-  
-                      <div class="search-field">
-                          <input type="text" placeholder="Search...">
-                          <i class='bx bx-search'></i>
-                      </div>
                   </div>
               </div>
           </div>
@@ -89,15 +77,15 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" id="name" placeholder="Enter your name" required>
           </div>
           <div class="input-box">
             <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <input type="text"  id="uname" placeholder="Enter your username" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" id="emailAddress" placeholder="Enter your email" required>
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
@@ -137,11 +125,11 @@
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Type here enithing you want to ask Us ! </label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="text" rows="3"></textarea>
           </div>
         </div>
         <div class="button">
-          <input type="submit" value="Register">
+          <input onclick="sendMail()" type="submit" value="Send">
         </div>
       </form>
     </div>

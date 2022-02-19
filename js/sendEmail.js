@@ -1,14 +1,12 @@
-function sendMail(contactForm) { 
-    emailjs.send("The Climbing Club", "template_tti6rf9", { 
-        "from-email": contactForm.emailaddress.value,
-        "project_request": contactForm.text.value
-    })
-    .then(
-        function(response) { 
-            console.log("SUCCESS", response);
-        },
-        function(error) { 
-            console.log("FAILED", error);
-        });
-}
+function sendMail(params) { 
+    var tempParams ={
+        from_name:document.getElementById('name'.value),
+        to_name:document.getElementById('emailAddress'.value),
+        message:document.getElementById('text'.value)
+    };
 
+    emailjs.send('service_0yg5pn8', 'template_tti6rf9', tempParams)
+    .then(function(res){
+        console.log('success', res.status);
+    })
+};
