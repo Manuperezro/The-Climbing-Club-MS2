@@ -92,15 +92,16 @@
     </nav>
   </header>
 
-  <!--Enquery Section Insipired and modify from codeLab Youtube Tutorial-->
+  <!--Check Weather Section Insipired and modify from codeLab Youtube Tutorial-->
 
   <section>
+
     <div class="container">
-      <div class="content">
+      <div class="content"> 
 
-        <!--Weather API interfaz Section Insipired and modify from OpenWeatherMap API Tutorial 2021 Youtube Tutorial-->
+        <!-- Weather API interfaz Section Insipired and modify from OpenWeatherMap API Tutorial 2021 Youtube Tutorial-->
 
-        <div class="main">
+      <!-- <div class="main">
           <div class="header">
             <h1>Get The Weather</h1>
             <h2>Even if we have not control over it, It is good to know how is looking out there.</h2>
@@ -109,21 +110,38 @@
           </div>
 
           <div class="input">
-            <input type="text" placeholder="Enter the city" class="input_text">
-            <input type="submit" value="Submit" class="submit">
+            <input type="text" id="searchUser" class="form-control" placeholder="Location">
+            <button class="btn btn-primary" id="submit">Submit</button>
           </div>
         </div>
       
         <div class="container">
-          <div class="card">
-            <h1 class="name" id="name"></h1>
-            <p class="temp"></p>
-            <p class="clouds"></p>
-            <p class="desc"></p>
-          </div>
+         <div id="content">   -->
+          <div class="containerWeather searchContainer">
+            <div class="search card">
+                <h1>Get The Weather For a Location</h1>
+                <p class="lead">Enter Your Location</p>
+                <input type="text" id="searchUser" class="form-control" placeholder="Location">
+            </div>
+            <br>
+            <div id="profile"></div>
+        </div>
+        <div class="container text-center mt-2">
+            <button class="btn btn-primary" id="submit">Submit</button>
+        </div>
+        
+
+        <div class="weatherOutput" id="content">
+
+        </div>
+<hr>
+         </div>
         </div>
       </div>
     </div>
+  </section> 
+  
+
 
     <!-- End of Signup section-->
 
