@@ -35,6 +35,14 @@ border-radius: 5px;
   --search-text: #010718;
 }
 
+.warning { 
+  color: #e07510;
+}
+
+.black{
+  color: #000000;
+}
+
 body{
   height: 100vh;
   background-color: var(--body-color);
@@ -287,6 +295,8 @@ body.dark .search-field i{
   font-size: 70px;
 }
 
+
+
 #hero-outer{
   height:auto;
   width: 100%;
@@ -335,8 +345,7 @@ span.fade{
   background: #eb6d05;
 }
   
-/*---------------------------Slide Menu Products*/
-
+/*---------------------------Slide Menu Products:  Retreas and Courses*/
 
 .card-body{ 
   background-color: #393838;
@@ -1003,14 +1012,29 @@ input[type="submit"]{
   }
 }
 
+@media screen and (max-width:960px) { 
+  .cover-text {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width:600px) { 
+  .hero-image {
+  padding-bottom: -50%;
+  }
+}
+
 /*Testimonials Media Queries*/
 
-@media screen and (max-width:960px) { 
+
+@media screen and (max-width:600px) { 
   .col-testimonials { 
     flex: 100%;
     max-width: 80%;
   }
 }
+
 
 @media screen and (max-width:600px) { 
   .col-testimonials{ 
