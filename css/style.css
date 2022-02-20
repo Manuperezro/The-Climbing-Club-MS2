@@ -1062,6 +1062,25 @@ input[type="submit"]{
 
 /*Maps Media Queries*/
 
+
+@media screen and (max-width:960px) { 
+  .map-canvas { 
+    min-height: 260px;
+    height: 100%;
+  
+  }
+
+}
+
+@media screen and (max-width:600px) { 
+  .map-canvas { 
+    min-height: 260px;
+    height: 100%;
+  
+  }
+}
+
+
 @media screen and (max-width:960px) { 
   .col-spain2 {
     max-width: 92.5%;

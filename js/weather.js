@@ -16,7 +16,6 @@ class Fetch {
   }
 }
 
-
 // //fetch data from openweather API
 
 // button.addEventListener('click', function(name){
