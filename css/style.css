@@ -286,7 +286,12 @@ body.dark .search-field i{
     overflow: hidden;
     position: relative;
     
-    
+}
+
+.hero-outer{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .cover-text{ 
@@ -962,10 +967,6 @@ input[type="submit"]{
   margin: auto;
   width: 60%;
   padding: 10px;
-}
-
-.call {
-  font-size: 65px;
 }
 
 /*----------------------------------------Media Queries*/
