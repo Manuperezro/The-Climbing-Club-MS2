@@ -35,22 +35,14 @@
   <!-- custom css file-->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-  <!-- Email.JS-->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
-
-  <script>
-    (function () {
-      emailjs.init("user_moWGT6QUo99NFP4O1RopU");
-    })();
-  </script>
 
   <title>The Climbing Club</title>
+
 </head>
 
 <body>
-
   <header>
-    <!--       navigation--bar-->
+    <!-----navigation---bar-->
     <nav>
       <div class="nav-bar">
         <i class='bx bx-menu sidebarOpen'></i>
@@ -66,7 +58,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="retreats.html">Retreats</a></li>
             <li><a href="courses.html">Courses</a></li>
-            <li><a href="checkweather.html">Weather</a></li>
+            <li><a href="weather.html">Weather</a></li>
             <li><a href="enquiries.html">Enquery</a></li>
           </ul>
         </div>
@@ -76,105 +68,60 @@
             <i class='bx bx-moon moon'></i>
             <i class='bx bx-sun sun'></i>
           </div>
-          <div class="searchBox">
-            <div class="searchToggle">
-              <i class='bx bx-x cancel'></i>
-              <i class='bx bx-search search'></i>
-            </div>
-
-            <div class="search-field">
-              <input type="text" id="search" placeholder="Search...">
-              <i class='bx bx-search'></i>
-            </div>
-          </div>
         </div>
       </div>
     </nav>
   </header>
 
-  <!--Check Weather Section Insipired and modify from codeLab Youtube Tutorial-->
-
-  <section>
-
-    <div class="container">
-      <div class="content"> 
-
-        <!-- Weather API interfaz Section Insipired and modify from OpenWeatherMap API Tutorial 2021 Youtube Tutorial-->
-
-      <!-- <div class="main">
-          <div class="header">
-            <h1>Get The Weather</h1>
-            <h2>Even if we have not control over it, It is good to know how is looking out there.</h2>
-            <hr>
-            <p>Enter any city name in the input box below to get the data</p>
-          </div>
-
-          <div class="input">
+    <div class="container searchContainer">
+        <div class="search card">
+            <h1>Get The Weather Before go Climbing</h1>
+            <p class="lead">Enter Your Location</p>
             <input type="text" id="searchUser" class="form-control" placeholder="Location">
-            <button class="btn btn-primary" id="submit">Submit</button>
-          </div>
         </div>
-      
-        <div class="container">
-         <div id="content">   -->
-          <div class="containerWeather searchContainer">
-            <div class="search card">
-                <h1>Get The Weather For a Location</h1>
-                <p class="lead">Enter Your Location</p>
-                <input type="text" id="searchUser" class="form-control" placeholder="Location">
-            </div>
-            <br>
-            <div id="profile"></div>
-        </div>
-        <div class="container text-center mt-2">
-            <button class="btn btn-primary" id="submit">Submit</button>
-        </div>
-        
-
-        <div class="weatherOutput" id="content">
-
-        </div>
-<hr>
-         </div>
-        </div>
-      </div>
+        <br>
+        <div id="profile"></div>
     </div>
-  </section> 
-  
+    <div class="container text-center mt-2">
+        <button class="btn btn-primary" id="submit">Submit</button>
+        <div id="content">
 
-
-    <!-- End of Signup section-->
-
-    <!-- Footer-->
-
+        </div>
+    </div>
+    
     <footer>
-      <div class="footer-icons">
-        <i class=" fa fa-facebook-official icon-footer" aria-hidden="true"></i>
-        <i class="fa fa-instagram icon-footer" aria-hidden="true"></i>
-        <i class="fa fa-twitter-square icon-footer" aria-hidden="true"></i>
-        <i class="fa fa-linkedin-square icon-footer" aria-hidden="true"></i>
-      </div>
+        <div class="footer-icons">
+            <i class=" fa fa-facebook-official icon-footer" aria-hidden="true"></i>
+            <i class="fa fa-instagram icon-footer" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square icon-footer" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square icon-footer" aria-hidden="true"></i>
+        </div>
 
     </footer>
-
     <!--0. Jquery Cdn-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!--1.  Owl Caousel min-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!--0. cdn Bootrrapt Cdn-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 
     <!--1 Manin Js file-->
     <script src="js/main.js"></script>
 
+    <!-- Weather App-->
+    <script src="js/weather.js"></script>
 
-    <!-- Email Js-->
-    <script src="js/sendEmail.js"></script>
+    <script src="js/ui.js"></script>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -699,6 +699,11 @@ padding-top: 50px;
 
 /*Newsletter */
 
+
+.card-body2{ 
+  color: #46494d!important;
+  text-align: center;
+}
 .form-newsletter{
   background-color: rgb(231, 231, 231);
 }
@@ -878,7 +883,7 @@ form .input-box span.details{
   background: linear-gradient(135deg, #ca7b14,#c5c4bd,) ;
   }
 
-/*Weather API*/
+/* Weather API*/
 
 .weatherOuput{
   margin-bottom: 40px;
@@ -966,8 +971,11 @@ input[type="submit"]{
   font-size:20px;
 }
 
-/*---------------------------------------------Modals*/
-
+#content{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
 
 /*----------------------------------------Media Queries*/
 
@@ -1039,23 +1047,23 @@ input[type="submit"]{
 
 /*call-text Media Querie*/
 
-@media screen and (max-width:960px) { 
-  .cover-text {
-    font-size: 30px;
-    margin-top: 50px;
-  }
-}
-
 @media screen and (max-width:600px) { 
   .cover-text {
-    font-size: 30px;
+    font-size: 45px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width:740px) { 
+  .cover-text {
+    font-size: 45px;
     margin-top: 50px;
   }
 }
 
 @media screen and (max-width:960px) { 
   .cover-text {
-    font-size: 30px;
+    font-size: 55x;
     margin-top: 50px;
   }
 }
