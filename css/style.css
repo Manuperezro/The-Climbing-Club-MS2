@@ -325,7 +325,7 @@ span.fade{
   color:#d37e17
 }
 
-#cover-text p { 
+#cover-text h1 { 
     margin-left: 40px;
 }
 
@@ -455,10 +455,6 @@ span.fade{
 .sections-h1 { 
   color: #6c757d!important;
   padding-top: 50px;
-}
-
-.sections-h1 h1{ 
-  padding-bottom: -25px;
 }
 
 .newsletter{ 
@@ -669,10 +665,6 @@ padding-top: 50px;
   color: #bdb2b2;
 }
 
-.sections-h1 h1{ 
-  padding-bottom: -25px;
-}
-
 .retreats-spicif{ 
   padding: 20px;
   color: #ffffff;
@@ -878,11 +870,6 @@ form .input-box span.details{
    background: linear-gradient(135deg, #c5c4bd, #ca7b14);
  }
 
-
- form .button input:hover{
-  background: linear-gradient(135deg, #ca7b14,#c5c4bd,) ;
-  }
-
 /* Weather API*/
 
 .weatherOuput{
@@ -977,6 +964,10 @@ input[type="submit"]{
   padding: 10px;
 }
 
+.call {
+  font-size: 65px;
+}
+
 /*----------------------------------------Media Queries*/
 
 /*---------------------------------NavBar Media Queries*/
@@ -1049,28 +1040,22 @@ input[type="submit"]{
 
 @media screen and (max-width:600px) { 
   .cover-text {
-    font-size: 45px;
+    font-size: 55px;
     margin-top: 50px;
   }
 }
 
 @media screen and (max-width:740px) { 
   .cover-text {
-    font-size: 45px;
+    font-size: 55px;
     margin-top: 50px;
   }
 }
 
 @media screen and (max-width:960px) { 
   .cover-text {
-    font-size: 55x;
+    font-size: 65px;
     margin-top: 50px;
-  }
-}
-
-@media screen and (max-width:600px) { 
-  .hero-image {
-  padding-bottom: -50%;
   }
 }
 
