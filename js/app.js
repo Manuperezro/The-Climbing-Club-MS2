@@ -1,3 +1,6 @@
+// Get the Weather APP  Made it following the guides and tutorial of the OPENWEATHER API.
+// Also qith help of 2 youtube tutorials : 1 Shanji Rajai ,  2 Steve Griffin  Profesor.
+
 //inst classes//
 
 const ft = new Fetch();

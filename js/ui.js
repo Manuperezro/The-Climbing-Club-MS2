@@ -1,3 +1,6 @@
+// Get the Weather APP  Made it following the guides and tutorial of the OPENWEATHER API.
+// Also qith help of 2 youtube tutorials : 1 Shanji Rajai ,  2 Steve Griffin  Profesor.
+
 class UI {
     constructor() {
       this.uiContainer = document.getElementById("content");
@@ -7,9 +10,7 @@ class UI {
   
     populateUI(data) {
       //de-structure vars
-  
-      //add them to inner HTML
-  
+
       this.uiContainer.innerHTML = `
           
           <div class="card mx-auto mt-5" style="width: 18rem;">
@@ -24,27 +25,28 @@ class UI {
           
           
           `;
-    }
+    };
   
+    
     clearUI() {
       uiContainer.innerHTML = "";
-    }
+    };
   
     saveToLS(data) {
       localStorage.setItem("city", JSON.stringify(data));
-    }
+    };
   
     getFromLS() {
       if (localStorage.getItem("city" == null)) {
         return this.defaultCity;
       } else {
         this.city = JSON.parse(localStorage.getItem("city"));
-      }
+      };
   
       return this.city;
-    }
+    };
   
     clearLS() {
       localStorage.clear();
     }
-  }
+  };
