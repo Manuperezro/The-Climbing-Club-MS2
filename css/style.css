@@ -288,6 +288,11 @@ body.dark .search-field i{
     
 }
 
+.call{
+  font-size: 85px;
+}
+
+
 .hero-outer{
   width: 100%;
   overflow: hidden;
@@ -297,7 +302,6 @@ body.dark .search-field i{
 .cover-text{ 
   z-index: 999;
   position: absolute;
-  font-size: 85px;
   padding-top: 5%;
 }
 
@@ -316,7 +320,6 @@ body.dark .search-field i{
   position: absolute;
   z-index: 999;
   bottom: 80%;
-  font-size: 50px;
   color: #FFF;
   padding-left: 5%;
   padding-top: 5%;
@@ -347,9 +350,6 @@ span.fade{
 
 }
 
-.button1 button:hover{
-  background: #eb6d05;
-}
   
 /*---------------------------Slide Menu Products:  Retreas and Courses*/
 
@@ -581,8 +581,8 @@ span.fade{
 
 /*retreats.html*/
 
-.hero-retreats{
-  font-size: xx-large;
+.cover-retreats{
+  font-size: 75px;
 }
 
 .button-map{
@@ -630,12 +630,14 @@ span.fade{
 
 .footer-icons{
   text-align: center;
+  color: #b3651d;
 
 }
-
+ a { 
+  color: #b3651d;
+ }
 .icon-footer{
   padding: 50px;
-  
   font-size: 40px;
 
 }
