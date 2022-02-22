@@ -4,12 +4,19 @@
 
 /*---------------------------main body*/
 
+.display-1 {
+  font-size: calc(1.625rem + 4.5vw);
+  font-weight: 300;
+  line-height: 2.2;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   transition: all 0.4s ease;;
+  line-height: normal;
 }
 
 .sections-h1{
@@ -647,6 +654,7 @@ span.fade{
 .map-canvas { 
   min-height: 360px;
   height: 100%;
+  max-width: none;
 
 }
 
@@ -683,7 +691,7 @@ padding-top: 50px;
 
 }
 
-.col-retreat {
+/* .col-retreat {
   width: 396px;
   max-width: 90%;
   box-sizing: border-box;
@@ -694,12 +702,12 @@ padding-top: 50px;
   padding-left: 95px;
   padding-top: 20px;
 
-}
+} */
 
 /*Newsletter */
 
 
-.card-body2{ 
+-body2{ 
   color: #46494d!important;
   text-align: center;
 }
@@ -954,12 +962,12 @@ input[type="submit"]{
   margin-right: 20px;
 }
 
-.card h1{
+ h1{
   padding: 5px 0;
   text-align: center;
 }
 
-.card p{
+ p{
   text-align: center;
   margin:40px 0;
   font-size:20px;
@@ -972,6 +980,17 @@ input[type="submit"]{
 }
 
 /*----------------------------------------Media Queries*/
+
+@media screen and (max-width:740px) { 
+  .text-center { font-size: 45px;
+  }
+}
+
+@media screen and (max-width:640px) { 
+  .text-center { font-size: 35px;
+    overflow-x: hidden;
+  }
+}
 
 /*---------------------------------NavBar Media Queries*/
 
@@ -1062,7 +1081,7 @@ input[type="submit"]{
   }
 }
 
-/* Maps Media Queries*/ 
+
 
 
 /*Testimonials Media Queries*/
@@ -1139,6 +1158,20 @@ input[type="submit"]{
 
 }
 
+/*Map Retreat*/
+
+@media screen and (max-width:960px) { 
+  .col-spain2 {
+    max-width: 95.5%;
+  }
+  
+}
+
+@media screen and (max-width:600px) { 
+  .col-spain2 {
+    max-width: 95.5%;
+  }
+
 /*Enqueries Media Queries*/
 
 @media(max-width: 584px){
@@ -1165,17 +1198,33 @@ input[type="submit"]{
      flex-direction: column;
    }
  }
+}
 
  @media screen and (max-width:960px) { 
-  .card2 {
-    margin-left: -25px;
-    width: 120%;
+  .text-center {
+    font-size: 40px;
   }
 }
 
 @media screen and (max-width:600px) { 
-  .card2 {
-   margin-left: -25px;
-   width: 120%;
+  .text-center {
+    font-size: 35px;
   }
 }
+
+@media screen and (max-width:960px) { 
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+  }
+  
+}
+
+@media screen and (max-width:600px) { 
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { 
+    line-height: 1.4;
+  }
+}
+
+
+
+

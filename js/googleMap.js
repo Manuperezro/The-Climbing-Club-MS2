@@ -1,5 +1,7 @@
 //Function to render multples maps in one html.file.
 
+google.maps.event.trigger(map1, "resize");
+
 function initMap() {
     console.log("initMap")
     const map1 = new google.maps.Map(document.getElementById("map1"), {
