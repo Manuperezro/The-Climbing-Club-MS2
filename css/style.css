@@ -739,7 +739,7 @@ padding-top: 50px;
   margin: auto;
   overflow: hidden;
   padding:0 20px;
-  color: #585353;
+  color: #6c757d!important;
 
 }
 
@@ -1062,67 +1062,11 @@ input[type="submit"]{
   }
 }
 
-/*Maps Media Queries*/
+/* Maps Media Queries*/ 
 
-
-/* @media screen and (max-width:960px) { 
-  .map-canvas { 
-    min-height: 260px;
-    height: 100%;
-  
-  }
-
-}
-
-@media screen and (max-width:600px) { 
-  .map-canvas { 
-    min-height: 260px;
-    height: 100%;
-  
-  }
-} */
-
-
-@media screen and (max-width:960px) { 
-  .col-spain2 {
-    max-width: 92.5%;
-    margin-left: 15px;
-  }
-
-}
-
-@media screen and (max-width:600px) { 
-  .col-spain2 {
-    max-width: 92.5%;
-    margin-left: 15px;
-  }
-}
-
-@media screen and (max-width:960px) { 
-  .col-retreat {
-   padding: 5px;
-   
-  }
-
-}
-
-@media screen and (max-width:600px) { 
-  .col-retreat {
-   padding: 5px;
-   
-  }
-
-}
 
 /*Testimonials Media Queries*/
 
-
-@media screen and (max-width:600px) { 
-  .col-testimonials { 
-    flex: 100%;
-    max-width: 80%;
-  }
-}
 
 
 @media screen and (max-width:600px) { 

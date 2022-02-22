@@ -35,14 +35,22 @@
   <!-- custom css file-->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+  <!-- Email.JS-->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+
+  <script>
+    (function () {
+      emailjs.init("user_moWGT6QUo99NFP4O1RopU");
+    })();
+  </script>
 
   <title>The Climbing Club</title>
-
 </head>
 
 <body>
+
   <header>
-     <!-- navigation bar Inspired and modify from a youtube tutorial "the CodingLab"-->
+    <!-- navigation bar Inspired and modify from a youtube tutorial "the CodingLab"-->
     <nav>
       <div class="nav-bar">
         <i class='bx bx-menu sidebarOpen'></i>
@@ -55,11 +63,11 @@
           </div>
 
           <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="retreats.html">Retreats</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="weather.html">Weather</a></li>
-            <li><a href="enquiries.html">Enquery</a></li>
+            <li><a  target="_blank" href="index.html">Home</a></li>
+            <li><a target="_blank" href="retreats.html" >Retreats</a></li>
+            <li><a  target="_blank" href="courses.html" >Courses</a></li>
+            <li><a target="_blank" href="weather.html" >Weather</a></li>
+            <li><a  target="_blank" href="enquiries.html">Enquery</a></li>
           </ul>
         </div>
 
@@ -67,6 +75,17 @@
           <div class="dark-light">
             <i class='bx bx-moon moon'></i>
             <i class='bx bx-sun sun'></i>
+          </div>
+          <div class="searchBox">
+            <div class="searchToggle">
+              <i class='bx bx-x cancel'></i>
+              <i class='bx bx-search search'></i>
+            </div>
+
+            <div class="search-field">
+              <input type="text" id="search" placeholder="Search...">
+              <i class='bx bx-search'></i>
+            </div>
           </div>
         </div>
       </div>

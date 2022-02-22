@@ -15,6 +15,12 @@
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- 2 Owl Carousel 5-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- font awesome-->
   <script src="https://kit.fontawesome.com/bc9f53eb72.js" crossorigin="anonymous"></script>
 
@@ -29,21 +35,22 @@
   <!-- custom css file-->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-  <!-- 2 Owl Carousel 5-->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>The Climbing Club</title>
+  <!-- Email.JS-->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
 
+  <script>
+    (function () {
+      emailjs.init("user_moWGT6QUo99NFP4O1RopU");
+    })();
+  </script>
+
+  <title>The Climbing Club</title>
 </head>
 
 <body>
 
   <header>
-
     <!-- navigation bar Inspired and modify from a youtube tutorial "the CodingLab"-->
-
     <nav>
       <div class="nav-bar">
         <i class='bx bx-menu sidebarOpen'></i>
@@ -56,11 +63,11 @@
           </div>
 
           <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="retreats.html">Retreats</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="weather.html">Weather</a></li>
-            <li><a href="enquiries.html">Enquery</a></li>
+            <li><a  target="_blank" href="index.html">Home</a></li>
+            <li><a target="_blank" href="retreats.html" >Retreats</a></li>
+            <li><a  target="_blank" href="courses.html" >Courses</a></li>
+            <li><a target="_blank" href="weather.html" >Weather</a></li>
+            <li><a  target="_blank" href="enquiries.html">Enquery</a></li>
           </ul>
         </div>
 
@@ -68,6 +75,17 @@
           <div class="dark-light">
             <i class='bx bx-moon moon'></i>
             <i class='bx bx-sun sun'></i>
+          </div>
+          <div class="searchBox">
+            <div class="searchToggle">
+              <i class='bx bx-x cancel'></i>
+              <i class='bx bx-search search'></i>
+            </div>
+
+            <div class="search-field">
+              <input type="text" id="search" placeholder="Search...">
+              <i class='bx bx-search'></i>
+            </div>
           </div>
         </div>
       </div>
@@ -149,7 +167,7 @@
   <section class="hero-outer">
 
     <div class="box">
-      <img src="assets/images/courseslead.jpg" alt="climber shape in the sunset" data-ride="carousel">
+      <img src="assets/images/coursesTRAD.jpg" alt="climber shape in the sunset" data-ride="carousel">
     </div>
 
 
@@ -216,7 +234,7 @@
   <section class="hero-outer">
 
     <div class="box">
-      <img src="assets/images/technique.jpg" alt="climber shape in the sunset" data-ride="carousel">
+      <img src="assets/images/technique-Yes.jpg" alt="climber shape in the sunset" data-ride="carousel">
     </div>
 
 
@@ -286,7 +304,7 @@
   <section class="hero-outer">
 
     <div class="box">
-      <img src="assets/images/coursesindoors121.jpg" alt="climber shape in the sunset" data-ride="carousel">
+      <img src="assets/images/1to1.jpg" alt="climber shape in the sunset" data-ride="carousel">
     </div>
 
 
