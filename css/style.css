@@ -1158,6 +1158,21 @@ input[type="submit"]{
 
 }
 
+@media screen and (max-width:960px) { 
+  .card-body2 { 
+    width:140px;
+  }
+  
+}
+
+
+@media screen and (max-width:600px) { 
+  .card-body2 { 
+    width:140px;
+  }
+
+}
+
 /*Map Retreat*/
 
 @media screen and (max-width:960px) { 
