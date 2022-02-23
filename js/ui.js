@@ -1,5 +1,5 @@
 // Get the Weather APP  Made it following the guides and tutorial of the OPENWEATHER API.
-// Also qith help of 2 youtube tutorials : 1 Shanji Rajai ,  2 Steve Griffin  Profesor.
+// Also with help of 2 youtube tutorials : 1 Shanji Rajai ,  2 Steve Griffin  Profesor.
 
 class UI {
     constructor() {
@@ -16,8 +16,8 @@ class UI {
           <div class="card mx-auto mt-5" style="width: 18rem;">
               <div class="card-body2 justify-content-center">
                   <h5 class="card-title">${data.name}</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Highs of ${data.main.temp_max}. Lows of ${data.main.temp_min}</h6>
-                  <h6 class="card-subtitle mb-2 text-muted">Winds: Speed ${data.wind.speed}. Visibility : ${data.visibility}</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Highs of ${data.main.temp_max}°C. Lows of ${data.main.temp_min}°C</h6>
+                  <h6 class="card-subtitle mb-2 text-muted">Winds: Speed ${data.wind.speed}kmh. Visibility : ${data.visibility}km</h6>
                   <p class="card-text ">Weather conditions are described as: ${data.weather[0].description}</p>
                   
               </div>
