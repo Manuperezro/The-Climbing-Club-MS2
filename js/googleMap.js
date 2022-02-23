@@ -4,7 +4,7 @@ google.maps.event.trigger(map1, "resize");
 
 function initMap() {
     console.log("initMap")
-    const map1 = new google.maps.Map(document.getElementById("map1"), {
+    const map1 = new google.maps.Map(document.getElementById("map1","resize"), {
         zoom: 10,
         center: {
             lat: 36.91354492839833,  
@@ -12,7 +12,7 @@ function initMap() {
         }
     });
     
-    const map2 = new google.maps.Map(document.getElementById("map2"), {
+    const map2 = new google.maps.Map(document.getElementById("map2","resize"), {
         zoom: 10,
         center: {
             lat: 37.16980244262552,   
@@ -20,7 +20,7 @@ function initMap() {
         }
     });
 
-    const map3 = new google.maps.Map(document.getElementById("map3"), {
+    const map3 = new google.maps.Map(document.getElementById("map3","resize"), {
         zoom: 10,
         center: {
             lat: -16.290871450010705,
@@ -28,7 +28,7 @@ function initMap() {
         }
     });
 
-    const map4 = new google.maps.Map(document.getElementById("map4"), {
+    const map4 = new google.maps.Map(document.getElementById("map4","resize"), {
         zoom: 10,
         center: {
             lat: 28.786922766307868,
@@ -36,7 +36,7 @@ function initMap() {
         }
     });
 
-    const map5 = new google.maps.Map(document.getElementById("map5"), {
+    const map5 = new google.maps.Map(document.getElementById("map5","resize"), {
         zoom: 10,
         center: {
             lat: 59.919395799600004,
