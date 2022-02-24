@@ -5,12 +5,13 @@ class UI {
     constructor() {
       this.uiContainer = document.getElementById("content");
       this.city;
-      this.defaultCity = "London";
+      this.defaultCity = "Bristol";
     }
   
     populateUI(data) {
       //de-structure vars
 
+      //Html to load to the page with the weather Information 
       this.uiContainer.innerHTML = `
           
           <div class="card mx-auto mt-5" style="width: 18rem;">
@@ -27,7 +28,7 @@ class UI {
           `;
     };
   
-    
+  
     clearUI() {
       uiContainer.innerHTML = "";
     };

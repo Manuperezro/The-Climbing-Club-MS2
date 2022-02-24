@@ -43,20 +43,4 @@ function initMap() {
 };
 
 
-// var $map1 = $('map1');  // get the jquery dom element of the map
-// var mapInstance = new google.maps.Map($map1[0],{ });
-
-
-// var $map = $('map1');  // get the jquery dom element of the map
-// if ($map.is(':visible')) {   // if it became visible
-//     $map.height($map.width() / 1.6);  // resize the dom element
-//     var mapInstance = $map.data('mapInstance'); // get the google maps map instance
-//     google.maps.event.trigger(mapInstance, "resize");   // resize the map
-// }
-
-// window.onresize = function() {
-//     var currCenter = map.getCenter();
-//     google.maps.event.trigger(map1, 'resize');
-//     map.setCenter(currCenter);
-//   };
 

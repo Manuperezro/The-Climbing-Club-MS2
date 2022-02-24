@@ -1,5 +1,5 @@
 // Animation Navigation Var.
-// Code from CodingLab  Youtube Channel.
+// code follow tutorial in  CodingLab  Youtube Channel.
 const body = document.querySelector("body"),
     nav = document.querySelector("nav"),
     modeToggle = document.querySelector(".dark-light"),
@@ -12,12 +12,12 @@ if (getMode && getMode === "dark-mode") {
     body.classList.add("dark");
 }
 
-// js code to toggle dark and light mode
+//  toggle dark and light mode
 modeToggle.addEventListener("click", () => {
     modeToggle.classList.toggle("active");
     body.classList.toggle("dark");
 
-    // js code to keep user selected mode even page refresh or file reopen
+    //  keep the selected mode 
     if (!body.classList.contains("dark")) {
         localStorage.setItem("mode", "light-mode");
     } else {
@@ -25,13 +25,8 @@ modeToggle.addEventListener("click", () => {
     }
 });
 
-// js code to toggle search box
-searchToggle.addEventListener("click", () => {
-    searchToggle.classList.toggle("active");
-});
 
-
-//   js code to toggle sidebar
+//  toggle sidebar
 sidebarOpen.addEventListener("click", () => {
     nav.classList.add("active");
 });
@@ -82,33 +77,3 @@ $(document).ready(function () {
     });
 });
 
-
-
-// call Image to create and effect in the call texts //
-
-// const text = document.querySelector(".call");
-// const strText = text.textContent;
-// const splitText = strText.split("");
-// text.textContent = "";
-
-// for(let i=0; i < splitText.length; i++){
-//     text.innerHTML += "<span>" + splitText[i] + "</span>";
-// }
-
-// let char = 0; 
-// let timer = setInterval(onTick, 50);
-
-// function onTick(){ 
-//     const span = text.querySelectorAll('span')[char];
-//     span.classList.add('fade');
-//     char++
-//     if(char === splitText.length){
-//         complete();
-//         return;
-//     }
-// }
-
-// function complete(){ 
-//     clearInterval(timer);
-//     timer = null;
-// }

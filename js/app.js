@@ -3,17 +3,17 @@
 
 //inst classes//
 
-const ft = new Fetch();
+const fetc = new Fetch();
 const ui = new UI();
 
 //add event listeners//
 
-const search = document.getElementById("searchUser");
+const city = document.getElementById("searchUser");
 const button = document.getElementById("submit");
 button.addEventListener("click", () => {
-  const currentVal = search.value;
+  const currentVal = city.value;
 
-  ft.getCurrent(currentVal).then((data) => {
+  fetc.getCurrent(currentVal).then((data) => {
     //call a UI method//
     ui.populateUI(data);
     //call saveToLS

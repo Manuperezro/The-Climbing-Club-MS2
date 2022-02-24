@@ -1,3 +1,4 @@
+//data for or the locations to get the markers in the maps
 const locations = [{
     country: "Spain",
     name: "crag",
@@ -333,7 +334,7 @@ const locations = [{
 },
 ];
 
-
+//data for or the locations to get the Center in the Countries in the maps
 const countries = [{
     id:'map1',
     name: "Spain",
@@ -409,7 +410,6 @@ function retreatButton(element, country, poi) {
         center: filteredCountry[0].latlng,
 
     });
-
 
 
     //show different Markers 
