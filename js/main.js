@@ -40,7 +40,6 @@ body.addEventListener("click", e => {
 });
 
 
-
 //Swiper Owl carousel  code inspired from Coding River Youtube Channel.
 
 //Initialize owl Carousel
@@ -62,18 +61,26 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+// $(document).ready(function () {
+//     $("#testimonial-slider").owlCarousel({
+//         items: 1,
+//         itemsDesktop: [1000, 1],
+//         itemsDesktopSmall: [979, 1],
+//         itemsTablet: [768, 1],
+//         pagination: false,
+//         navigation: true,
+//         navigationText: ["", ""],
+//         autoPlay: true
+//     });
+// });
 
+// Customers Testimonials effects 
 
-$(document).ready(function () {
-    $("#testimonial-slider").owlCarousel({
-        items: 1,
-        itemsDesktop: [1000, 1],
-        itemsDesktopSmall: [979, 1],
-        itemsTablet: [768, 1],
-        pagination: false,
-        navigation: true,
-        navigationText: ["", ""],
-        autoPlay: true
-    });
-});
+function showTestimonial (){
+    document.getElementsById("Melissa").style.color = "white";
+}
+
+function hideTestimonial (){ 
+    document.getElementsById("Melissa").style.color = "grey";
+}
 
