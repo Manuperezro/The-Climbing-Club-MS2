@@ -296,7 +296,7 @@ body.dark .search-field i{
 }
 
 .call{
-  font-size: 85px;
+  font-size: 105px;
 }
 
 
@@ -449,10 +449,9 @@ span.fade{
   margin-bottom: 20px;
 }
 
-.stars p { 
-  color:rgb(255, 255, 255)
+.stories{
+  color: #6c757d;
 }
-
 
 /*Newsletter Form*/
  

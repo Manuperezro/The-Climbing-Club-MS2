@@ -9,6 +9,16 @@ function sendMail(params) {
 
     emailjs.send('service_0yg5pn8', 'template_tti6rf9', tempParams)
     .then(function(res){
-        console.log('success', res.status);
+        // console.log('success', res.status);
     })
+    .then(
+        function(response) {
+            // console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+            alert("Email sent successfully!");
+        },
+        function(error) {
+            //    console.log("FAILED", error);
+            alert("FAILED!"+error);
+          }
+        );
 };

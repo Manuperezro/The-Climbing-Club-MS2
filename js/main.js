@@ -61,26 +61,13 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-// $(document).ready(function () {
-//     $("#testimonial-slider").owlCarousel({
-//         items: 1,
-//         itemsDesktop: [1000, 1],
-//         itemsDesktopSmall: [979, 1],
-//         itemsTablet: [768, 1],
-//         pagination: false,
-//         navigation: true,
-//         navigationText: ["", ""],
-//         autoPlay: true
-//     });
-// });
 
 // Customers Testimonials effects 
 
-function showTestimonial (){
-    document.getElementsById("Melissa").style.color = "white";
-}
+$(".col-testimonials").mouseover(function(){
+    $(this).children('.testimonials').children('.stars').children('.stories').css("color", "white");
+});
 
-function hideTestimonial (){ 
-    document.getElementsById("Melissa").style.color = "grey";
-}
-
+$(".col-testimonials").mouseout(function(){
+    $(this).children('.testimonials').children('.stars').children('.stories').css("color", "#6c757d");
+});
