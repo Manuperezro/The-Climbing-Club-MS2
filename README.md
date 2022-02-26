@@ -8,7 +8,7 @@
 
 ### By Manuel Perez
 
-![Mockup](assets/images/flat-devices-mockup.png "Mockup")
+![Mockup](assets/images/mockup.png "Mockup")
 
 [View Repository in GitHub Pages] (https://github.com/Manuperezro/The-Climbing-Club-MS2)
 
