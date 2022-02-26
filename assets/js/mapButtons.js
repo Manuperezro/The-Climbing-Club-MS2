@@ -425,4 +425,4 @@ function retreatButton(element, country, poi) {
 
     }
 
-};
+}

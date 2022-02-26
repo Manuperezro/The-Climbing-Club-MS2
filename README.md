@@ -76,3 +76,135 @@ Characteristic that suit perfectly with the needs and goals of the website.
 
 - Font family: Poppins.
 
++ Images:
+
+- Background image land page : I choose an stronge image with black and orange 2 captatives colors. to end an stronge message to the user.
+
+- retreats images : I choose good quality images of the destinations to made the products more attractive
+
+- courses images : I chose images the practicioners enjoying climbing outdoors and indoors so the users can imagine themselvs having fun while practice 
+
+
+## Wireframes
+
+The Basic structure of The climbing Club was skectched using [balsamiq](https://balsamiq.com/).
+
+Here some images of the proccess( to see full wireframe click PDF) : 
+
+-  PC Mac screen: ![wireframe](assets/css/images/wireframe.png "PC wireframe")
+
+- Courses and retreats lyout ![wireframe](assets/css/images/wireframe2.png "PC wireframe")
+
+- Courses and retreats lyout ![wireframe](assets/css/images/wireframe3.png "PC wireframe")
+
+- Mobile screen: ![wireframe](assets/css/images/wireframe4.png "PC wireframe")
+
+## Features
+
+ - #### Existing Features:
+     
+   + Navigation bar with dark and light mode with links to the “Home”, “retreats”, "courses", “weather” and "enquery" in all pages, and to contact form , customers reviews in Index.html. (Home page)
+
+   + Enquery form with email.js wich connect directly the user to the company.
+
+   + Google maps API, to get the user an intereactive map where the distances from the Hotel, the climbing crags, the higking path etc can be see clicking the differents buttons.
+
+   + A weather App to see the current weather in all the cityes so the users can have an idea of the temperatures, visibility and winds speed, with the idea of help users to prepare the adecuated material for weather conditions.
+## Technologies: 
+
+### Languages used: 
+
+- [HTML](https://en.wikipedia.org/wiki/HTML5)
+
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+
+-[JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)
+
+### Also I used: 
+
+- [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)
+
+  From Bootrap I used: grid system, the nav, the buttoms, modals and part of the forms layout. 
+  Everything has been modify to the project requirements and styled with CSS.
+  
+- [Google Fonts](https://en.wikipedia.org/wiki/Google_Fonts)
+
+- [Font awesome](https://fontawesome.com/v4.7/icons/)
+
+- [Balsamiq](https://balsamiq.com/)
+
+- [Pexels](https://www.pexels.com/)
+
+- [Pexels](https://en.wikipedia.org/wiki/JQuery/)
+
+## Testing: 
+
+### Testing results:
+
+- [W3C Markup Validation Service](https://validator.w3.org/)
+
+ + To validate HTML and CSS code.
+
+ - [Js Hint Validation Service](https://jshint.com/)
+
+ + To validate JavaScript code.
+
+ Validators Results :
+
+Index.html 
+
+![Validator](assets/css/images/validator/index.validate.png  "Home")
+
+retreats.html 
+
+![Validator](assets/css/images/validator/retreats.validate.png "retreats")
+
+courses.html 
+
+![Validator](assets/css/images/validator/courses.html.png "courses")
+
+weather.html 
+
+![Validator](assets/css/images/validator/weather.validator.png "weather")
+
+Equery.html 
+
+![Validator](assets/css/images/validator/enqueries.validate.png "Enquery")
+
+style.css 
+
+![Validator](assets/css/images/validator/css.validate.png "CSS")
+
+JS files
+
+Main.js
+
+![Validator](assets/css/images/validator/mainjs.validator.png "Manin.js")
+
+mapButtons.js
+
+![Validator](assets/css/images/validator/buttons.js.png "mapButtons.js")
+
+Data.js
+
+![Validator](assets/css/images/validator/data.js.png "Data.js")
+
+app.js
+
+![Validator](assets/css/images/validator/app.js.png "app.js")
+
+weather.js
+
+![Validator](assets/css/images/validator/app.js.png "Weather.js")
+
+ui.js
+
+![Validator](assets/css/images/validator/ui,js.png "ui.js")
+
+googleMaps.js
+
+![Validator](assets/css/images/validator/googlemaps.js.png "googleMaps.js")
+
+
+
+
