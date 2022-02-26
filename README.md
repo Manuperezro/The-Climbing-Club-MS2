@@ -8,7 +8,7 @@
 
 ### By Manuel Perez
 
-![Mockup](assets/images/mockup.png "Mockup")
+![Mockup](/assets/css/images/mockup.png "Mockup")
 
 [View Repository in GitHub Pages] (https://github.com/Manuperezro/The-Climbing-Club-MS2)
 
@@ -238,87 +238,118 @@ enquery.html
      -  next : the users will se the first and "easy contact form"  where the users can send and email with any question to the organization, and also see the email address and contact phone.
 
 
+  #####  As a First Time Visitor, I want to be able to navigate easyly and intuitive throughout the site to find content related the products that the company offer and tools to decided / plan holidays:
 
+    - At the top of each page the users can find the header with the logo and the navigation menu, 
+    wich mades easy to navigates through the pages of the site. 
 
+    - At the botton of the hero image users can see easily the two main products that the organization offers, and find buttons with colors wich made intuitive to navigate into the more detailed information.
 
+  ##### As a first time visitor I want to see some stories and reviews from other ussers to get to know the organization. I also Want to find the links to the social media to find more information about the organization and users thoughts and reviews and be able to determine how trasted and known the studio is:
 
+    - At the bottom of all pages the users can find the footer, with icons of the social media links, so the user can click easyly and see how  real the company is ("Credibility")
 
+    - After the 2 main product sections users can find some customer's testimonials.
+     
+  #### Returning Visitor Goals: 
 
-
-
-
-
-
-
-
-
-
-  #####  As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content and find where the studio is located:
-
-    - At the top of each page the is a header with the logo and the navigation menu, 
-    wich mades easy to navigates through the four pages of the site. 
-
-    - At the botton of the header in the Index page, there is a call to action 
-    for first time visitors( new members offer ) 
-    and at the botton of this 2  call to action redirections links,
-     so the users always now where to go and they don't feel trapped 
-     as they reach the bottom of the page.
-
-    - At the bottom of the footer in all pages there is a link to bring back 
-    the users to the top of the page, to the nav menu, 
-    so is easy for the user to move thorugh the website to what is looking for.
-
-    -In the Home page the users can fin a call of action link wich get to the iframe map location
-     at the botton of the page and also to the contact us information.
-
-  ##### As a first time visitor I want to see some stories and reviews from other ussers to get to know the studio. I also Want to find the links to the social media to find more information about the studio and ussers thoughts and reviews and be able to determine how trasted and known the studio is:
-
-    - After the teaching section the users can read some reviews from others visitors.
-
-    - at the botton of the Visit us here the user can find links to social media, 
-    link to the studio gmail and the iframe google map location at the right side. 
-    
- #### Returning Visitor Goals: 
-
-  ##### As a returning Visitor, I want to book easyly classes and workshops:
+  ##### As a returning Visitor, I want to find the products that I already seen and relevant information about them :
    
-    - The links for classes/ Prices and workshops are right on the middle in the home page.  
-      This pages two will be the most visited pages for a returning visitor
+    - The user will want to find the product that he saw easyly and with a few clicks. Users can acces to the main products detailed pages in 2 ways, Navbar and slide carousel.
 
-    - In the classes and workshops pages are buttons with open a modal to be able to register to a future app 
-    (mindbody-online-app), in wich the users will be able to made online bookings and payments.
+    - The user will want to acces easysyly to the weather app to made sure how the weather in the destination is. In the same way the users can acces to the weather app easyly with the navbar.
 
-  ##### As a returning Visitor, I want to fin any new updates in the timetable and workshops section:
+  
 
-    - In the footer at every page the users can find a form to join and received emails with every update.
+  ##### As a returning Visitor, I want to be abel to send an enquery in simple steps:
 
-    - Also Updates in the timetale will be highligh in the timetable.
+     - User will want to send a enquery. Also linked with the Navbar at the top of every page.
+
 
   ##### As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have:
 
-    - At the bottom in index.html is section with "find Us": and "Contac us:" where users can find 
-    the contact information.
+     - In the main page users will find a contact form at the bottom of the main page.
 
-    - In the same section users can find social media links.
+     - In the main page users will find a contact phone number at the bottom of the main page.
+
 
  #### Frequent Users Goals:
 
 ##### As a Frequent User, I want to be able to book a class easyly:
 
-    - The user would already be comfortable with the website layout and can easily click 
-    the classes link to book in the timetable with a few clicks.
+    - The user would already be comfortable with the website layout and can easily click to find the sections with specific products they are interested in.
 
-##### As a Frequent User, I want to check to see if there are any new workshops.
+    -The user will be able to find the weather app in no more than 2 clicks
+## Deployment:
 
-    - The user would already be comfortable with the website layout and can easily click the workshop page.
+### Inception:
 
-#####  As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the class timetable, website workshops or events.
+ + this project was created using Code Institute template from GitHub:
 
-    - At the bottom of every page their is a footer which content is consistent throughout all pages.
-      in the center of the footer there is a form where the user can "Subscribe to our Newsletter" 
-      and are prompted to Enter their email address.
-      There is a "Join " button just underneath of the input field which is located close to the field 
-      and can easily be distinguished.
+ + After the creation of the project, I rename it as : MSP1-Code-Institute-Yoga-School.
+
+ + In order to push this project from GitPod to Github I used a set of git commands on the terminal: 
+  
+- git status  - Check the status of the repository and see if there were any changes in files 
+
+- git add .  - Add the files that were modified/created, so we can commit it 
+
+- git commit -m "message for commit"  - Commits all the changes
+
+- git push  - Pushes all committed versions to GitHub.
+
+#### Deployment to GitHub Pages:
+
++ The project was deployed to GitHub Pages using the following steps:
+
+- Log in to GitHub and locate GitHub Repository
+
+- At the top of repository click on "Settings"
+
+- Once you are in settings scroll down to "GitHub Pages"
+
+- Under "Source", click the dropdown called "None" and select "Master Branch".
+
+- After the page automatically refresh scroll down again on "GitHub Pages" and I will  see live link to the published site.
+
+
+### Cloning repository:
+
++ Local Clone
+
+- Log in to GitHub and locate GitHub Repository
+
+- At the top of repository click on Code
+
+- From the dropdown menu under HTTPS copy the link
+
+- Now on the IDE create a directory where you want to make the clone
+
+- Type git clone and paste the link that you copy from step 3.
+
+
+### Forking repository:
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
+
+- Log in to GitHub and locate the GitHub Repository
+- At the top of the Repository (not top of page) just above the "Settings" Button on - - the menu, locate the "Fork" Button.
+- You should now have a copy of the original repository in your GitHub account.
+
+
+## Credits:
+
+## Aknowledgements:
+
+A huge thank you to my mentor who has been incredibly helpful and approchable throughout this project.
+
+Likewise, to the tutors for helping through to completion on this.
+
+And to the teachers at the City of Bristol College: Pasquale and Ben for their time and energy.
+
+Big Thanks.
+
+
 
 
 
