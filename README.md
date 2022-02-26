@@ -124,8 +124,7 @@ Here some images of the proccess( to see full wireframe click PDF) :
 
 - [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)
 
-  From Bootrap I used: grid system, the nav, the buttoms, modals and part of the forms layout. 
-  Everything has been modify to the project requirements and styled with CSS.
+- [Jquery](https://en.wikipedia.org/wiki/JQuery/)
   
 - [Google Fonts](https://en.wikipedia.org/wiki/Google_Fonts)
 
@@ -134,8 +133,6 @@ Here some images of the proccess( to see full wireframe click PDF) :
 - [Balsamiq](https://balsamiq.com/)
 
 - [Pexels](https://www.pexels.com/)
-
-- [Pexels](https://en.wikipedia.org/wiki/JQuery/)
 
 ## Testing: 
 
