@@ -177,33 +177,14 @@ style.css
 
 JS files
 
-Main.js
+                                                               
+Main.js  ![Validator](assets/css/images/validator/mainjs.validator.png "Manin.js") mapButtons.js ![Validator](assets/css/images/validator/buttons.js.png "mapButtons.js")
 
-![Validator](assets/css/images/validator/mainjs.validator.png "Manin.js")
+Data.js ![Validator](assets/css/images/validator/data.js.png "Data.js") app.js  ![Validator](assets/css/images/validator/app.js.png "app.js")
+                                                         
+weather.js ![Validator](assets/css/images/validator/app.js.png "Weather.js")  sui.js ![Validator](assets/css/images/validator/ui,js.png "ui.js")
 
-mapButtons.js
-
-![Validator](assets/css/images/validator/buttons.js.png "mapButtons.js")
-
-Data.js
-
-![Validator](assets/css/images/validator/data.js.png "Data.js")
-
-app.js
-
-![Validator](assets/css/images/validator/app.js.png "app.js")
-
-weather.js
-
-![Validator](assets/css/images/validator/app.js.png "Weather.js")
-
-ui.js
-
-![Validator](assets/css/images/validator/ui,js.png "ui.js")
-
-googleMaps.js
-
-![Validator](assets/css/images/validator/googlemaps.js.png "googleMaps.js")
+googleMaps.js![Validator](assets/css/images/validator/googlemaps.js.png "googleMaps.js")
 
 
 
