@@ -63,10 +63,10 @@
           </div>
 
           <ul class="nav-links">
-            <li><a  href="index.html">Home</a></li>
-            <li><a target="_blank" href="retreats.html" >Retreats</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a target="_blank" href="retreats.html">Retreats</a></li>
             <li><a target="_blank" href="courses.html">Courses</a></li>
-            <li><a target="_blank"  href="weather.html">Weather</a></li>
+            <li><a target="_blank" href="weather.html">Weather</a></li>
             <li><a target="_blank" href="enquiries.html">Enquery</a></li>
           </ul>
         </div>
@@ -96,62 +96,62 @@
 
   <section>
     <div class="bg">
-    <div class="container">
-      <div class="title">
-        <h1>Booking Enquiry</h1>
-      </div>
-      <div class="content">
-        <form action="#">
-          <div class="user-details">
-            <div class="input-box">
-              <span class="details">Full Name</span>
-              <input type="text" id="name" placeholder="Enter your name" required>
+      <div class="container">
+        <div class="title">
+          <h1>Booking Enquiry</h1>
+        </div>
+        <div class="content">
+          <form onsubmit="return sendMail2(this);" class="contact-form">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" name="Name" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" name="email" id="emailAddress" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" name="phone_number" id="phoneNumber" placeholder="Enter your number" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Course or Retreat</span>
+                <input type="text" name="type" id="ProductType" placeholder="Enter your choice" required>
+              </div>
             </div>
-            <div class="input-box">
-              <span class="details">Email</span>
-              <input type="text" id="emailAddress" placeholder="Enter your email" required>
+            <div class="gender-details">
+              <input type="radio" name="gender1" id="dot-1">
+              <input type="radio" name="gender2" id="dot-2">
+              <input type="radio" name="gender3" id="dot-3">
+              <span class="gender-title">Group size</span>
+              <div class="category">
+                <label for="dot-1">
+                  <span class="dot one"></span>
+                  <span class="gender">Group 3 - 6 pp </span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">Group 6 +</span>
+                </label>
+                <label for="dot-3">
+                  <span class="dot three"></span>
+                  <span class="gender">Couples or Only Me</span>
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="text" class="form-label">Type here enithing you want to ask Us !
+                </label>
+                <textarea class="form-control" name="text" id="text" rows="3"></textarea>
+              </div>
             </div>
-            <div class="input-box">
-              <span class="details">Phone Number</span>
-              <input type="text" id="phoneNumber" placeholder="Enter your number" required>
+            <div class="button">
+              <input type="submit" id="button" value="Send Email" >
             </div>
-            <div class="input-box">
-              <span class="details">Course or Retreat</span>
-              <input type="text" id="ProductType" placeholder="Enter your choice" required>
-            </div>
-          </div>
-          <div class="gender-details">
-            <input type="radio" name="gender" id="dot-1">
-            <input type="radio" name="gender" id="dot-2">
-            <input type="radio" name="gender" id="dot-3">
-            <span class="gender-title">Group size</span>
-            <div class="category">
-              <label for="dot-1">
-                <span class="dot one"></span>
-                <span class="gender">Group 3 - 6 pp </span>
-              </label>
-              <label for="dot-2">
-                <span class="dot two"></span>
-                <span class="gender">Group 6 +</span>
-              </label>
-              <label for="dot-3">
-                <span class="dot three"></span>
-                <span class="gender">Couples or Only Me</span>
-              </label>
-            </div>
-            <div class="mb-3">
-              <label for="text" class="form-label">Type here enithing you want to ask Us !
-              </label>
-              <textarea class="form-control" id="text" rows="3"></textarea>
-            </div>
-          </div>
-          <div class="button">
-            <input onclick="sendMail()" type="submit" value="Send">
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
   </section>
   <!-- End of Signup section-->
 
@@ -190,8 +190,8 @@
   <!--1 Manin Js file-->
   <script src="assets/js/main.js"></script>
 
-   <!-- Email Js-->
-   <script src="assets/js/sendEmail.js"></script>
+  <!-- Email Js-->
+  <script src="assets/js/sendEmailBook.js"></script>
 
 </body>
 

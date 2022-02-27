@@ -439,14 +439,16 @@
               <p>Bookings : 07/8989898</p>
             </div>
           </div>
+
+
           <div class="col col-contact">
             <div class="contact-form">
-              <form onsubmit="return sendMail(this);" class="contact-form">
+              <form id= "form" onsubmit="return sendMail(this);" class="contact-form">
 
                 <input type="text" name="name" id="name" class="contact-input name" placeholder="Name"
                   aria-label="contact form name" required />
 
-                <input type="text" name="emailaddress" id="emailAddress" class="contact-input email"
+                <input type="text" name="email" id="email" class="contact-input email"
                   placeholder="Email" aria-label="contact form email" required />
 
                 <div class="mb-3">
@@ -457,7 +459,7 @@
                 <div class="buttonEmail">
                   <button onclick="sendMail()" type="submit" class="submit btn btn-secondary" data-bs-toggle="modal2"
                     data-bs-target="#contactModal" style="background: linear-gradient(135deg, #c5c4bd, #ca7b14);">
-                    Email Us</button>
+                    Email Us</button> 
                 </div>
               </form>
 
@@ -467,34 +469,11 @@
       </div>
     </div>
 
-    <!-- modal -->
-
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Thanks for Contac Us</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal2" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label class="form-label">Email Succesfully send</label>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal2">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </section>
 
   <!-- end of contact section-->
 
-  <!-- Footer-->
+  <!-- Footer -->
 
   <footer>
     <div class="footer-icons">
