@@ -233,14 +233,14 @@ Here some images of the proccess( to see full wireframe click PDF) :
 
    - Using the bootstrap modal, I have add a modal to let the user know that is succecfully joined.
 
-    ![wireframe](assets/css/images/newsletter2.png "Newsletter")
+    ![features](assets/css/images/newsletter2.png "Testimonials")
 
    + Contact form
 
    - In the contact Us section I have include a simple contact form with email.js and Boostrap. To made easy to the user to comunicated 
      with the organization.
 
-    ![wireframe](assets/css/images/contact.png "Contact form")
+    ![features](assets/css/images/contact.png "Contact")
 
    + Footer
 
