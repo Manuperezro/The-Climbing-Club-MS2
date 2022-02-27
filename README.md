@@ -229,49 +229,49 @@ Here some images of the proccess( to see full wireframe click PDF) :
 
    - I have a created a newsletter section to allow the user to type his email address and click the botton to join the newsletter.
 
-    ![features](assets/css/images/newsletter1.png "Newsletter")
+   ![features](assets/css/images/newsletter1.png "Newsletter")
 
    - Using the bootstrap modal, I have add a modal to let the user know that is succecfully joined.
 
-    ![features](assets/css/images/newsletter2.png "Testimonials")
+   ![features](assets/css/images/newsletter2.png "Newsletter2")
 
    + Contact form
 
    - In the contact Us section I have include a simple contact form with email.js and Boostrap. To made easy to the user to comunicated 
      with the organization.
 
-    ![features](assets/css/images/contact.png "Contact")
+   ![features](assets/css/images/contact.png "Contact")
 
    + Footer
 
    - In the footer section I have created Icons with fontAwesome for the coial media link, I have left a Blue effect hover to made it clear that they are clickeable links.
 
-    ![wireframe](assets/css/images/footer.png "Contact form")
+   ![wireframe](assets/css/images/footer.png "Contact form")
 
   - ##### retreats.html (Retreats page)
 
    + In the Retreats section I have created 5 maps for each retreat destination calling the Google maps API to create the maps, and using javascrip to get the user to intereactive with the map using the buttons, to see diferents markers that shows points of interest in the destination as  Climbing Crags, the location of the hotel, hiking routes and natural monuments. So the user can see the distance from the hotel.
  
-    ![wireframe](assets/css/images/retreats.Map.png "Retreat Map")
+   ![wireframe](assets/css/images/retreats.Map.png "Retreat Map")
 
    - ##### courses.html (Courses page)
 
    + In the courses page I used google maps iframes to show the users the locations where the courses will take place.
  
-    ![wireframe](assets/css/images/courses.222.png "Courses Location")
+   ![wireframe](assets/css/images/courses.222.png "Courses Location")
 
     - ##### Weather.html (Weather App page)
 
    + Using the OpenWeather API I Have created a weather App page where the user can see the current weather in any city in the world so the users can have an idea of the temperatures, visibility and winds speed.
    The idea is to help users to prepare the adecuated climbing material for weather conditions.
     
-    ![wireframe](assets/css/images/weatherfeat.png "Weather app")
+   ![wireframe](assets/css/images/weatherfeat.png "Weather app")
 
    - ##### Enquiry.html (Booking page)
 
    + Using email.js API and boostrap I Have created an enquery form where the users can spicify and book for any of the products that the organization offers. 
     
-    ![wireframe](assets/css/images/bookingform.png "Enquery")
+   ![wireframe](assets/css/images/bookingform.png "Enquery")
 
   
 ## Technologies: 
