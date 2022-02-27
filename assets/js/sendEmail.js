@@ -2,7 +2,7 @@
 function sendMail(params) { 
     var tempParams ={
         from_name:document.getElementById('name'.value),
-        to_name:document.getElementById('emailAddress'.value),
+        email:document.getElementById('emailAddress'.value),
         message:document.getElementById('text'.value)
     };
 
@@ -17,5 +17,3 @@ function sendMail(params) {
      }
    );
 }
-
-
