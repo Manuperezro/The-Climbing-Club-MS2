@@ -1,10 +1,10 @@
 # The Climbing Club 
 
-# A responsive travel company's website specialized in Climbing  activities and destinations, wich also offers Climbing courses 
+# A responsive travel company's website specialized in Climbing retreats and courses. 
 
 ## Code Institute - Milestone Project 2
 
-## HTML/ CSS / JAVASCRIPT - Interactive front end Development Milestone Project.
+## HTML/ CSS / JavaScript - Interactive front end Development Milestone Project 2.
 
 ### By Manuel Perez
 
@@ -65,7 +65,7 @@
 
 ## The Why
 
-Shows the offer that the climbing Club has to the specific customers.
+Shows the offer that the climbing Club has to the visitors customers and potential customer.
 
 Invite the customers to navigate throught the website and discover the products.
 
@@ -102,16 +102,16 @@ Users will have two differents forms to made contact with the organization, one 
      - To see reviews before I decide to book.
   - #### Website Owner Goals:
   - ### I want customers: 
-      - to be able to find information easily.
-      - to be able to enquire about any of the products.
-      - to be able to made contact easily with the organization.
-      - to navigate back and forard from any of the products pages to the booking or weather pages.
+     - To be able to find information easily.
+     - To be able to enquire about any of the products.
+     - To be able to made contact easily with the organization.
+     - To navigate back and forard from any of the products pages to the booking or weather pages.
     
     ## Design:
 
-The Desing of the website is made to invite visitors to book and to sell them a different way of Holidays,
-So I tried to do a strong and captative design website,  with stronge colors contrast and I include a light / dark mode to ensure that can be confortable to every individual, 
-easy to navigate through and stronge and pleasant at the same time. 
+The Desing of the website is made to invite visitors to choose a different way of Holidays,
+So I tried to do a strong and captative design website,  with strongs colors contrast and I include a light / dark mode to ensure that can be confortable to every individual, easy to navigate through and stronge and pleasant at the same time. 
+
 I Include some pictures of the destinations to call the atention of the users and  pictures of climbers practicing some indoor and outdoor climbing, with the idea of motivate users to purchase.
 
 ### Design Brief:
