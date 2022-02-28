@@ -17,4 +17,5 @@ function sendMail2(params) {
         alert("FAILED!"+error);
      }
    );
+   return false;
 }
