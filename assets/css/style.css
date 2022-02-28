@@ -1105,6 +1105,13 @@ input[type="submit"]{
   }
 }
 
+@media screen and (max-width:400px) { 
+  nav .nav-bar .logo a {
+    font-size: 26px;
+  }
+  
+}
+
 
 @media screen and (max-width:740px) { 
   * {
