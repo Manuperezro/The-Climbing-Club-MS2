@@ -141,7 +141,7 @@ Characteristic that suit perfectly with the needs and goals of the website.
 - Icons
 I used line awesome for icons for social media links which I've included in the footer. I've also used blue color hover on the icons to help draw attention to them and to show the user they are clickable. 
 
-- Background image land page : I choose an stronge image with black and orange 2 captatives colors. to end an stronge message to the user.
+- Background image land page : I choose an stronge image with black and orange 2 captatives colors. to send an stronge message to the user.
 
 
 ## Wireframes
@@ -176,8 +176,9 @@ Here some images of the proccess( to see full wireframe click PDF) :
      
    + Navigation bar with dark and light mode 
 
-   - Navigation Menu.
-     With the help of the codelab youtube tutorial (details in the credit section) I have created a responsive navigation bar menu. wich change and addapt the from a menu bar to a hambruguer menu. also include the Dark and Light swift mode.
+   - Navigation Menu:
+
+     With the help of the codelab youtube tutorial (details in the credit section) I have created a responsive navigation bar menu. Wich change and addapt the from a menu bar to a hambruguer menu, also includes the Dark and Light swift mode.
      
    - big screen :
    
@@ -233,13 +234,13 @@ Here some images of the proccess( to see full wireframe click PDF) :
 
    + Footer
 
-   - In the footer section I have created Icons with fontAwesome for the coial media link, I have left a Blue effect hover to made it clear that they are clickeable links.
+   - In the footer section I have created Icons with fontAwesome for the soial media link, I have left the deffect Blue effect hover to made it clear that they are clickeable links.
 
    ![wireframe](assets/css/images/footer.png "Contact form")
 
   - ##### retreats.html (Retreats page)
 
-   + In the Retreats section I have created 5 maps for each retreat destination calling the Google maps API to create the maps, and using javascrip to get the user to intereactive with the map using the buttons, to see diferents markers that shows points of interest in the destination as  Climbing Crags, the location of the hotel, hiking routes and natural monuments. So the user can see the distance from the hotel.
+   + In the Retreats section I have created 5 maps for each retreat destination calling the Google maps API to create the maps, and using javaScrip to get the user to intereactive with the map using the buttons, to see diferents markers that shows points of interest in the destination as  Climbing Crags, the location of the hotel, hiking routes and natural monuments. So the user can see the distance from the hotel.
  
    ![wireframe](assets/css/images/retreats.Map.png "Retreat Map")
 
