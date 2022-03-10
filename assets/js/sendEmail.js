@@ -12,7 +12,6 @@ function sendMail(params) {
         alert("Email sent successfully!");
     },
     function(error) {
-        //console.log("FAILED", error);
         alert("FAILED!"+error);
      }
    );
