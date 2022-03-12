@@ -11,18 +11,13 @@ const ui = new UI();
 const city = document.getElementById("searchUser");
 const button = document.getElementById("submit");
 button.addEventListener("click", () => {
-  const currentVal = city.value;
-  console.log("hELLOOOOOOOO!!");
-  // Manuel this is John as I still have access to your workspace
-  // You need to check if the variable has no value
-  // but you also need to guard against the user adding blank spaces
-  // you can use the method trim() on the value before you asign it to currentVal
-  // link here  https://www.w3schools.com/jsref/jsref_trim_string.asp
-  if ( currentVal == ""  || currentVal == null){
+  let currentVal = city.value;
+  let finalVal = currentVal.trim()
+
+  if ( !finalVal || finalVal == ""  || finalVal == null || finalVal == undefined){
       return alert("Please insert the name of a city")
-  }
-  else{  
-    fetc.getCurrent(currentVal)
+  } else {  
+    fetc.getCurrent(finalVal)
       .then((data) => {
       //call a UI method//
       ui.populateUI(data);
