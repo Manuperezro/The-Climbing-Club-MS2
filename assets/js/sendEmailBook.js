@@ -9,7 +9,6 @@ function sendMail2(params) {
 
     emailjs.send('service_0yg5pn8', 'template_opd47s5', tempParams)
     .then(function(res){
-        console.log('success', res.status);
         alert("Email sent successfully!");
     },
     function(error) {

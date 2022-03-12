@@ -14,7 +14,7 @@ button.addEventListener("click", () => {
   let currentVal = city.value;
   let finalVal = currentVal.trim()
 
-  if ( !finalVal || finalVal == ""  || finalVal == null || finalVal == undefined){
+  if ( !finalVal || finalVal == ""  || finalVal == null) {
       return alert("Please insert the name of a city")
   } else {  
     fetc.getCurrent(finalVal)

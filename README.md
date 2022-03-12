@@ -445,7 +445,124 @@ enquery.html
 
     - The user would already be comfortable with the website layout and can easily click to find the sections with specific products they are interested in.
 
-    -The user will be able to find the weather app in no more than 2 clicks
+    - The user will be able to find the weather app in no more than 2 clicks
+
+
+### Test and bugs during development:
+
+    - During development I used Gitpod to code the site and used the command python3 -m http.server to run the website on the server to see the changes I had made.
+
+    - I then used the browser development tools to check the page across different screen sizes and also to change elements to see what worked and doesn't.
+
+    - During the development several issues or bugs appeared that I had to deal with.
+
+#### Navigation Menu: 
+     
+    - I followed the Code Lab tutorial to create my navigation menu
+
+    - Once I had the initial code completed I noticed the navigation menu was smaller in width that the body creating and overflow in the body. (the nav bar at the top only took half of the screen)
+
+        + I fix this using overflow-x: Hidden.
+
+                 +  body{
+                    height: 100vh;
+                    background-color: var(--body-color);
+                    overflow-x: hidden;
+                    color:#6c757d!important;
+                    }
+
+#### Google Maps API: 
+
+  ##### Maps Bug 1:
+
+    - I was trying to load the map but only shows me and empty div.
+
+    - I mannage to fix this bug with the help Of my teacher Ben who found a code in slack Overflow. the div need it a canvas with min-height and max-width define: 
+
+         + .map-canvas { 
+            min-height: 360px;
+            height: 100%;
+            max-width: none;
+
+          }
+
+  ##### Maps Bug 2:
+    - At the begining I was tried to render multiple maps in the same html file, using only one map Id or canvas and as a result I was only rendered the first ones and the rest shwoing an empty cavas. 
+
+    - To be able to render multiple maps I found a solution in Slack Overflow:
+      Creating different variables(Objects)in the Init fuction, and assign in one Id lats and log key and values: 
+
+         + //Function to render multples maps in one html.file.
+function initMap() {
+    const map1 = new google.maps.Map(document.getElementById("map1"), {
+        zoom: 10,
+        center: {
+            lat: 36.91354492839833,  
+            lng: -4.761574142993195
+        }
+    });
+    
+    const map2 = new google.maps.Map(document.getElementById("map2"), {
+        zoom: 10,
+        center: {
+            lat: 37.16980244262552,   
+            lng: 22.85739610361743
+        }
+    });
+
+    const map3 = new google.maps.Map(document.getElementById("map3"), {
+        zoom: 10,
+        center: {
+            lat: -16.290871450010705,
+            lng: -71.4056793845691
+        }
+    });
+
+    const map4 = new google.maps.Map(document.getElementById("map4"), {
+        zoom: 10,
+        center: {
+            lat: 28.786922766307868,
+            lng: 83.92050117019593
+        }
+    });
+
+    const map5 = new google.maps.Map(document.getElementById("map5"), {
+        zoom: 10,
+        center: {
+            lat: 59.919395799600004,
+            lng: 10.517719605916644
+        }
+    });
+}
+#### Marker Cluster:
+
+    - I was trying to show multiples cluster in my maps when you pressed the buttons, but with my initial code I only mannaged to show 1 marker per bottom. I found a code in Slack overflow who guided me to create the following code wich allows me to shows different markers :   
+            
+               +for (let i = 0; i < retreatInfo.length; i++) {
+                 marker = new google.maps.Marker({
+                 position: retreatInfo[i].latlng,
+                 map,
+                 title: name
+                });
+
+               marker.setMap(map);
+
+           }
+
+
+#### Email Js: 
+
+   - To show the use
+
+
+### Responsiveness and Browser Compatability.
+    - Throughout the development, the browser development tools were used to make sure the site is responsive across all screen sizes.
+    - I've also checked the site on numerous different devices to confirm this.
+    - Bootstrap grid system was used to help with responsiveness as the screen gets larger.
+    - media queries were also used to change elements at different screen size.
+    - The site was opened on Chrome, Safari, Firefox, Edge and Opera to confirm browser compatibility.
+    - I used am I responsive to show the sites responsiveness and the images can be sen at the start of the readme.
+
 ## Deployment:
 
 ### Inception:

@@ -1,6 +1,5 @@
 //Function to render multples maps in one html.file.
 function initMap() {
-    console.log("initMap")
     const map1 = new google.maps.Map(document.getElementById("map1"), {
         zoom: 10,
         center: {

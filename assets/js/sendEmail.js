@@ -12,7 +12,7 @@ function sendMail(params) {
         alert("Email sent successfully!");
     },
     function(error) {
-        alert("FAILED!"+error);
+        alert("Ops something went wrong"+error);
      }
    );
    return false;
