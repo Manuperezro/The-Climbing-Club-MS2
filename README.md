@@ -438,7 +438,6 @@ enquery.html
 
      - In the main page users will find a contact phone number at the bottom of the main page.
 
-
  #### Frequent Users Goals:
 
 ##### As a Frequent User, I want to be able to book a class easyly:
@@ -448,13 +447,28 @@ enquery.html
     - The user will be able to find the weather app in no more than 2 clicks
 
 
-### Test and bugs during development:
+### Bugs and Errors during development:
 
     - During development I used Gitpod to code the site and used the command python3 -m http.server to run the website on the server to see the changes I had made.
 
     - I then used the browser development tools to check the page across different screen sizes and also to change elements to see what worked and doesn't.
 
     - During the development several issues or bugs appeared that I had to deal with.
+
+#### Back Ground Images in Github pages:
+
+    - When I  was doing some checks I realize that the background images were showing in the browser when the site was open from my code editor (gitpod), but the weren;t when I opened the link from Github pages
+
+    - After a lot of researches I found the solution: It was the file path. 
+
+    - Git hub will only open the images is the file oath is in the following format  
+     
+      + background: url("../css/images/newsletter.jpg") no-repeat center center scroll;
+
+    - The following format will Not work: 
+
+      +  background: url(assets/css/images/enquery3.jpg) no-repeat center center scroll;
+
 
 #### Navigation Menu: 
      
@@ -487,18 +501,20 @@ enquery.html
           }
 
   ##### Maps Bug 2:
-    - At the begining I was tried to render multiple maps in the same html file, using only one map Id or canvas and as a result I was only rendered the first ones and the rest shwoing an empty cavas. 
+
+    - I tried to render multiple maps in the same html file, using only one map object, with one ID, as a result I was only rendered the first map, the rest weren't rendered. 
 
     - To be able to render multiple maps I found a solution in Slack Overflow:
       Creating different variables(Objects)in the Init fuction, and assign in one Id lats and log key and values: 
 
-         + //Function to render multples maps in one html.file.
-function initMap() {
-    const map1 = new google.maps.Map(document.getElementById("map1"), {
+        +  //Function to render multples maps in one html.file.
+
+     function initMap() {
+     const map1 = new google.maps.Map(document.getElementById("map1"), {
         zoom: 10,
         center: {
-            lat: 36.91354492839833,  
-            lng: -4.761574142993195
+           lat: 36.91354492839833,  
+           lng: -4.761574142993195
         }
     });
     
@@ -534,6 +550,7 @@ function initMap() {
         }
     });
 }
+
 #### Marker Cluster:
 
     - I was trying to show multiples cluster in my maps when you pressed the buttons, but with my initial code I only mannaged to show 1 marker per bottom. I found a code in Slack overflow who guided me to create the following code wich allows me to shows different markers :   
@@ -551,17 +568,48 @@ function initMap() {
 
 
 #### Email Js: 
+   
+    - If an error occurs for the emailJs an alert should be displayed to inform the user of the error.
+     
+    - I used the following code to inform the user either if the user has succesfully being send or to inform of the errors: 
+      
+  +  emailjs.send('service_0yg5pn8', 'template_tti6rf9', tempParams)
+      .then(function(res){
+          alert("Email sent successfully!");
+      },
+      function(error) {
+          alert("Ops something went wrong"+error);
+       }
+     );
+     return false;
+  }
 
-   - To show the use
+####  Weather App: 
+
+    - The weather App was throwing an error when the user input value ("City"), was left empty and the user click the submit buttom.
+
+    - I fix this bug using the follwing  code: 
+
+      let currentVal = city.value;
+      let finalVal = currentVal.trim()
+      
+    if ( !finalVal || finalVal == ""  || finalVal == null) {
+      return alert("Please insert the name of a city")
+
+    - Also I used the trim() method to avoid an error if the user type an empty space befor the name of the city. ( trim(). removes the empty spaces in both sides of a string)
 
 
 ### Responsiveness and Browser Compatability.
+
     - Throughout the development, the browser development tools were used to make sure the site is responsive across all screen sizes.
+
     - I've also checked the site on numerous different devices to confirm this.
+
     - Bootstrap grid system was used to help with responsiveness as the screen gets larger.
+
     - media queries were also used to change elements at different screen size.
-    - The site was opened on Chrome, Safari, Firefox, Edge and Opera to confirm browser compatibility.
-    - I used am I responsive to show the sites responsiveness and the images can be sen at the start of the readme.
+
+    - The site was opened on Chrome, Firefox and Edge to confirm browser compatibility.
 
 ## Deployment:
 
@@ -569,7 +617,7 @@ function initMap() {
 
  + this project was created using Code Institute template from GitHub:
 
- + After the creation of the project, I rename it as : MSP1-Code-Institute-Yoga-School.
+ + After the creation of the project, I rename it as : The-Climbing-Club-MS2.
 
  + In order to push this project from GitPod to Github I used a set of git commands on the terminal: 
   

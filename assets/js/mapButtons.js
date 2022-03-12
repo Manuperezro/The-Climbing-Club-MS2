@@ -729,16 +729,12 @@ function retreatButton(element, country, poi) {
         retreatInfo = defaultInfo;
     };
 
-    console.log("RetreatInfo", retreatInfo);
-
-
     //set the center of the map 
     let map = new google.maps.Map(document.getElementById(filteredCountry[0].id), {
         zoom: retreatInfo[0].zoom,
         center: filteredCountry[0].latlng,
 
     });
-
 
     //show different Markers 
     for (let i = 0; i < retreatInfo.length; i++) {
