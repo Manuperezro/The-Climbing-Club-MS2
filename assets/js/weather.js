@@ -16,7 +16,6 @@ class Fetch {
         throw new Error('Request Failed'); 
       }
       else {
-        console.log(data);
         return data;
       }
 
