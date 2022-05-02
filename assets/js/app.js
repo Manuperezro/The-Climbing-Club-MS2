@@ -6,16 +6,15 @@
 const fetc = new Fetch();
 const ui = new UI();
 
-//add event listeners//
-
 const city = document.getElementById("searchUser");
 const button = document.getElementById("submit");
+
 button.addEventListener("click", () => {
   let currentVal = city.value;
   let finalVal = currentVal.trim()
 
-  if ( !finalVal || finalVal == ""  || finalVal == null) {
-      return alert("Please insert the name of a city")
+  if ( !finalVal || finalVal == ""  || finalVal == null || finalVal == undefined) {
+      return alert(" the location can no be empty, Please insert the name of a city")
   } else {  
     fetc.getCurrent(finalVal)
       .then((data) => {
@@ -23,12 +22,9 @@ button.addEventListener("click", () => {
       ui.populateUI(data);
       //call saveToLS
       ui.saveToLS(data);
-    }).catch(error => window.alert("Error in weather"));
+    }).catch(error => window.alert("The name of the City should be writen in English"));
   }
 });
-
-  
-
 
 //event listener for local storage
 

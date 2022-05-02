@@ -18,11 +18,11 @@ class Fetch {
       else {
         return data;
       }
-
+      
     }
     catch(e) {
       // catch error
-      alert(e.message);
+      alert('Please insert the correct name of a City');
     }
   }
 }
