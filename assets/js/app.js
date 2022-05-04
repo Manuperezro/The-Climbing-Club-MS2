@@ -3,7 +3,7 @@
 
 //inst classes//
 
-const fetc = new Fetch();
+const fetch = new Fetch();
 const ui = new UI();
 
 const city = document.getElementById("searchUser");
@@ -13,16 +13,17 @@ button.addEventListener("click", () => {
   let currentVal = city.value;
   let finalVal = currentVal.trim()
 
-  if ( !finalVal || finalVal == ""  || finalVal == null || finalVal == undefined) {
-      return alert(" the location can no be empty, Please insert the name of a city")
+  if ( finalVal ) {
+    fetch.getCurrent(finalVal)
+    .then((data) => {
+    //call a UI method//
+    ui.populateUI(data);
+    //call saveToLS
+    ui.saveToLS(data);
+  }).catch(error => window.alert("The name of the City should be writen in English"));
+      
   } else {  
-    fetc.getCurrent(finalVal)
-      .then((data) => {
-      //call a UI method//
-      ui.populateUI(data);
-      //call saveToLS
-      ui.saveToLS(data);
-    }).catch(error => window.alert("The name of the City should be writen in English"));
+    return alert("Please insert the name of a city")
   }
 });
 

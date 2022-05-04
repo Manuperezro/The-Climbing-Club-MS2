@@ -40,10 +40,12 @@ class UI {
     }
 
     getFromLS() { 
-      if (localStorage.getItem("city" == "null")) {
-        return this.defaultCity;
-        } else { 
+
+      if (localStorage.getItem("city")) {
         this.city = Json.parse(localStorage.getItem("city"));
+        } else { 
+          return this.defaultCity;
+        
       }
     }
   
