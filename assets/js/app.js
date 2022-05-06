@@ -3,7 +3,7 @@
 
 //inst classes//
 
-const fetch = new Fetch();
+const weather = new Weather();
 const ui = new UI();
 
 const city = document.getElementById("searchUser");
@@ -13,18 +13,26 @@ button.addEventListener("click", () => {
   let currentVal = city.value;
   let finalVal = currentVal.trim()
 
-  if ( finalVal ) {
-    fetch.getCurrent(finalVal)
+  if ( finalVal) {
+
+    // make errors display none
+
+    weather.getCurrent(finalVal)
     .then((data) => {
+    console.log("inside fetch")
     //call a UI method//
     ui.populateUI(data);
     //call saveToLS
     ui.saveToLS(data);
-  }).catch(error => window.alert("The name of the City should be writen in English"));
-      
+  }).catch(error => { 
+    document.getElementById("error2").style.display="block"});
+
   } else {  
-    return alert("Please insert the name of a city")
-  }
+
+  console.log("errortrigger ", document.getElementById("error1"))
+  document.getElementById("error1").style.display="block"
+
+    }
 });
 
 //event listener for local storage

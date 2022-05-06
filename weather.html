@@ -96,23 +96,26 @@
     <!-- Get the Weather APP  Made it following the guides and tutorial of the OPENWEATHER API.
       Also qith help of 2 youtube tutorials : 1 Shanji Rajai and 2 Steve Griffin  Profesor -->
       
-<div class="weatherBg">
+<div id="weather" class="weatherBg">
   <div class="container searchContainer">
+
     <div class="search card">
       <h1>Get The Weather Before go Climbing</h1>
       <p class="lead">Enter Your Location</p>
       <input type="text" id="searchUser" class="form-control" placeholder="Location">
     </div>
     <br>
-    <div id="profile"></div>
+    <div id="error1" class="error text-danger">the location can no be empty, Please insert the name of a city</div>
+    <div id="error2" class="error text-danger">Make sure that the name of the City should be writen in English</div>
+    <div class="container text-center mt-2">
+      <button class="btn btn-primary" style="background: linear-gradient(135deg, #c5c4bd, #ca7b14);" id="submit">Submit</button>
+      <div id="content">
+      </div>
   </div>
-  <div class="container text-center mt-2">
-    <button class="btn btn-primary" style="background: linear-gradient(135deg, #c5c4bd, #ca7b14);" id="submit">Submit</button>
-    <div id="content">
-
-    </div>
+ 
   </div>
 </div>
+
   <!-- Footer-->
 
   <footer>

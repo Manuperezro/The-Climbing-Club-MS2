@@ -767,8 +767,8 @@ padding-top: 50px;
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  margin-top: 120px;
-  opacity: 0.8;
+  margin-top: 230px;
+  opacity: 0.9;
   
 }
 .container .title{
@@ -871,6 +871,10 @@ form .input-box span.details{
 
 /* Weather API*/
 
+.error { 
+  display: none;
+}
+
 .weatherOuput{
   margin-bottom: 40px;
   position: absolute;
@@ -964,15 +968,14 @@ input[type="submit"]{
 }
 
 .weatherBg{ 
+
   padding: 20px;
   color: #6c757d!important;
   text-align: center; 
   width: 100%;
-  height: 100%; 
+  height: 200%; 
   background: url("../css/images/weather6.jpg") no-repeat center center scroll;
   background-size: cover;
-  margin-top: 5%;
-  margin-bottom: 5%;
 
 }
 
