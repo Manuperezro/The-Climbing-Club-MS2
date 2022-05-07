@@ -12,8 +12,8 @@ const button = document.getElementById("submit");
 button.addEventListener("click", () => {
   let currentVal = city.value;
   let finalVal = currentVal.trim()
-  // let imputErrors = document.getElementById("erro1");
 
+  
   if ( finalVal ) {
 
     // make errors display none
