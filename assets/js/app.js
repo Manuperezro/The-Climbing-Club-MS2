@@ -12,8 +12,9 @@ const button = document.getElementById("submit");
 button.addEventListener("click", () => {
   let currentVal = city.value;
   let finalVal = currentVal.trim()
+  // let imputErrors = document.getElementById("erro1");
 
-  if ( finalVal) {
+  if ( finalVal ) {
 
     // make errors display none
 
@@ -24,6 +25,9 @@ button.addEventListener("click", () => {
     ui.populateUI(data);
     //call saveToLS
     ui.saveToLS(data);
+    //clear errors
+    document.getElementById("error1").style.display="none"
+    document.getElementById("error2").style.display="none"
   }).catch(error => { 
     document.getElementById("error2").style.display="block"});
 
