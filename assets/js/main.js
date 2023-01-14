@@ -1,5 +1,5 @@
 // Animation Navigation Var.
-// code follow tutorial in  CodingLab  Youtube Channel.
+// code Inspired by the tutorial in  CodingLab  Youtube Channel.
 const body = document.querySelector("body"),
     nav = document.querySelector("nav"),
     modeToggle = document.querySelector(".dark-light"),
